@@ -1,0 +1,82 @@
+/**
+* @name kot theme
+* @version 1
+* @description test
+* @author kot-pl
+* @invite 0
+* @source kot-pl.github.io
+*/
+body{
+    background-image: url(https://files.catbox.moe/p9rrmg.png);
+    background-size: cover;
+    background-attachment: fixed;
+    opacity: 0.85;
+}
+.theme-dark{
+    --background-accent: rgb(155, 97, 106);
+    --background-primary: var(--background-secondary);
+    --background-secondary-alt: var(--background-secondary);
+    --background-floating: var(--background-secondary);
+    --background-tertiary: var(--background-secondary);
+    --background-mentioned: rgba(155, 97, 106, 0.247);
+    --background-mentioned-hover: rgba(155, 97, 106, 0.247);
+    --background-message-highlight: rgba(155, 97, 106, 0.247);
+    --button-secondary-background: var(--brand-500);
+    --button-secondary-background-hover: var(--brand-560);
+    --button-secondary-background-active: var(--brand-600);
+    --info-warning-foreground: var(--brand-500);
+    --shadow-high: 0 0 2px black;
+    --header-primary: rgb(155, 97, 106);
+    --interactive-active: rgb(155, 97, 106);
+    --text-brand: rgb(155, 97, 106);
+    --text-link: rgb(226, 151, 162);
+    --text-muted: rgb(155, 97, 106);
+    --status-danger: rgb(194, 105, 119);
+    --menu-item-default-active-bg: var(--background-modifier-selected);
+    --menu-item-default-hover-bg: var(--background-modifier-hover);
+    --mention-foreground: var(--text-normal);
+    --mention-background: var(--brand-15a);
+    --brand-260: white;
+    --brand-400: rgb(194, 105, 119);
+    --brand-15a: rgba(194, 105, 118, 0.43);
+    --brand-500: rgb(155, 97, 106);
+    --brand-560: rgba(194, 105, 118, 0.43);
+    --brand-600: rgb(204, 113, 127);
+}
+div[class^="content_"]>div[class^="chat_"],
+div[class^="content_"]>div[class^="sidebar_"],
+div[class^="content_"]>main[class^="container_"]{
+    margin: 10px;
+    border: 2px dashed rgba(194, 105, 118, 0.43);
+    border-radius: 10px!important;
+}
+::-webkit-scrollbar-thumb{
+    background-color: rgba(128, 128, 128, 0.247)!important;
+}
+/*win buttons*/
+div[class^="typeWindows_"][class*="withFrame_"]{
+    height: 30px!important;
+    margin-top: 0;
+}
+div[class^="winButton"]{
+    padding: 10px;
+}
+/*popoup fix*/
+div[class^="recentMentionsPopout_"],
+div[class^="messagesPopoutWrap_"]{
+	max-height: 80vh!important;
+}
+/*unread balls*/
+[class^="containerDefault_"]>[class^="iconVisibility_"]>[class^="unread_"]{
+    position: absolute;
+    height: 23px;
+    width: 23px;
+    border-radius: 50%;
+    top: 9px;
+    left: 7px;
+    background: linear-gradient(0deg,#616161,#686767 36%,#616161 42%,#868686 70%);
+    z-index: 1;
+}
+div[class^="replyBar_"]{
+    background: var(--brand-500);
+}
