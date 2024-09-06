@@ -80,3 +80,8 @@ div[class^="messagesPopoutWrap_"]{
 div[class^="replyBar_"]{
     background: var(--brand-500);
 }
+/*activity memberlist*/
+div[data-list-item-id^="members-"]>div[class^="container_"],
+h3[class^="membersGroup_"]:has([class^="headerContainer"]){
+    display: none;
+}
