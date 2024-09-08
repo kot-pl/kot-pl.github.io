@@ -60,3 +60,8 @@ body{
 [d^="M4.08643"]{
     fill: var(--brand-600);
 }
+/*activity memberlist*/
+div[data-list-item-id^="members-"]>div[class^="container_"],
+h3[class^="membersGroup_"]:has([class^="headerContainer"]){
+    display: none;
+}
