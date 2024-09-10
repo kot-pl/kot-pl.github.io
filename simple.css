@@ -50,7 +50,8 @@ body{
 [class^="focusLock_"]>[class^="root_"]>[class*="header_"],
 [id="emoji-picker-tab-panel"]>[class^="wrapper_"],
 [class^="rail_"],
-[class^="rail_"]>[class^="wrapper_"]{
+[class^="rail_"]>[class^="wrapper_"],
+[class^="queryContainer_"][class*="focused_"]{
     background: var(--background-secondary);
 }
 [class^="control_"]>[class^="container_"]{
