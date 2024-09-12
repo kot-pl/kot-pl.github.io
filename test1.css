@@ -1,0 +1,47 @@
+#app-mount{
+    opacity: 0.85;
+}
+/**
+* @name kot test1
+* @version 1
+* @description test1
+* @author kot-pl
+* @invite 0
+* @source kot-pl.github.io
+*/
+body{
+    background: url(https://files.catbox.moe/03p2gm.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.theme-dark{
+    --background-secondary-alt: var(--primary-630);
+    --background-floating: var(--primary-630);
+    --interactive-normal: rgb(149, 125, 150);
+    --background-modifier-selected: rgba(149, 125, 150, 0.3);
+    --background-modifier-active: rgba(149, 125, 150, 0.4);
+    --background-modifier-hover: rgba(149, 125, 150, 0.2);
+    --menu-item-default-active-bg: rgba(149, 125, 150, 0.3);
+    --menu-item-default-selected-bg:rgba(149, 125, 150, 0.2);
+    --menu-item-default-hover-bg:rgba(149, 125, 150, 0.3);
+    --background-mentioned: rgba(52, 26, 53, 0.4);
+    --background-mentioned-hover: rgba(52, 26, 53, 0.2);
+    --background-message-highlight: rgba(52, 26, 53, 0.4);
+    --channels-default: rgb(149, 125, 150);
+    --status-danger: rgb(149, 125, 150);
+    --status-danger-background: rgb(149, 125, 150);
+    --brand-500: rgba(149, 125, 150, 0.3);
+    --brand-560: rgba(149, 125, 150, 0.3);
+    --brand-600: rgba(149, 125, 150, 0.2);
+    --custom-channel-members-bg: transparent;
+    --mention-background: rgba(149, 125, 150, 0.3);
+    --mention-foreground: white;
+    --brand-15a: rgba(149, 125, 150, 0.2);
+    --button-secondary-background: rgba(149, 125, 150, 0.2);
+    --button-secondary-background-hover: rgba(149, 125, 150, 0.3);
+    --button-secondary-background-active: rgba(149, 125, 150, 0.3);
+    --info-warning-foreground: rgb(149, 125, 150);
+    --text-brand: rgb(149, 125, 150);
+    --text-link: rgb(149, 125, 150);
+    --home-background: var(--primary-600)
+}
