@@ -13,35 +13,8 @@ body{
     background: url(https://files.catbox.moe/p9rrmg.png);
     background-size: cover;
     background-position: center;
-    background-attachment: fixed;
 }
 .theme-dark{
     --background-secondary-alt: var(--primary-630);
     --background-floating: var(--primary-630);
-    --background-accent: rgb(155, 97, 106);
-    --background-mentioned: rgba(155, 97, 106, 0.247);
-    --background-mentioned-hover: rgba(155, 97, 106, 0.247);
-    --background-message-highlight: rgba(155, 97, 106, 0.247);
-    --button-secondary-background: var(--brand-500);
-    --button-secondary-background-hover: var(--brand-560);
-    --button-secondary-background-active: var(--brand-600);
-    --info-warning-foreground: var(--brand-500);
-    --header-primary: rgb(155, 97, 106);
-    --interactive-active: rgb(155, 97, 106);
-    --text-brand: rgb(155, 97, 106);
-    --text-link: rgb(226, 151, 162);
-    --text-muted: rgb(155, 97, 106);
-    --status-danger: rgb(194, 105, 119);
-    --menu-item-default-active-bg: var(--background-modifier-selected);
-    --menu-item-default-hover-bg: var(--background-modifier-hover);
-    --mention-foreground: var(--text-normal);
-    --mention-background: var(--brand-15a);
-    --brand-260: white;
-    --brand-400: rgb(194, 105, 119);
-    --brand-15a: rgba(194, 105, 118, 0.43);
-    --brand-500: rgb(155, 97, 106);
-    --brand-560: rgba(194, 105, 118, 0.43);
-    --brand-600: rgb(204, 113, 127);
-    --control-brand-foreground-new: var(--brand-600);
-    --text-positive: var(--brand-600);
 }
