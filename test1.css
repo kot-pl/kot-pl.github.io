@@ -1,6 +1,3 @@
-#app-mount{
-    opacity: 0.85;
-}
 /**
 * @name kot test1
 * @version 1
@@ -9,6 +6,9 @@
 * @invite 0
 * @source kot-pl.github.io
 */
+#app-mount{
+    opacity: 0.85;
+}
 body{
     background: url(https://files.catbox.moe/03p2gm.jpg);
     background-size: cover;
