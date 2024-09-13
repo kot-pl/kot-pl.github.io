@@ -6,15 +6,20 @@
 * @invite 0
 * @source kot-pl.github.io
 */
-#app-mount{
-    opacity: 0.85;
+:not(#a#b#c),
+:not(#a#b#c):after,
+:not(#a#b#c):before{
+    animation:none !important;
+    transition:none !important;
 }
 body{
-    background: url(https://files.catbox.moe/p9rrmg.png);
-    background-size: cover;
-    background-position: center;
+    opacity: 0.85;
 }
-.theme-dark{
-    --background-secondary-alt: var(--primary-630);
-    --background-floating: var(--primary-630);
+:root{
+    background: url(https://files.catbox.moe/p9rrmg.png)center/cover;
+    --custom-channel-members-bg: transparent;
+    --home-background: transparent;
+    --channels-default: rgb(155, 111, 111);
+    --status-danger: rgba(250, 176, 176, 0.486);
+    --text-link: rgb(250, 176, 176);
 }
