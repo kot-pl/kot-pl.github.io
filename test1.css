@@ -15,6 +15,9 @@ body{
     --background-message-highlight: rgba(155, 111, 111, 0.3);
     --background-modifier-accent: transparent;
     --background-secondary-alt: var(--primary-630);
+    --badge-brand-text: white;
+    --brand-260: rgb(155, 111, 111);
+    --brand-360: rgb(155, 111, 111);
     --brand-500 :rgb(155, 111, 111);
     --brand-560: rgba(155, 111, 111, 0.3);
     --brand-600: rgba(155, 111, 111, 0.4);
