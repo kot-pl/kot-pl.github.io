@@ -6,20 +6,41 @@
 * @invite 0
 * @source kot-pl.github.io
 */
-:not(#a#b#c),
-:not(#a#b#c):after,
-:not(#a#b#c):before{
-    animation:none !important;
-    transition:none !important;
-}
 body{
     opacity: 0.85;
 }
 :root{
     background: url(https://files.catbox.moe/p9rrmg.png)center/cover;
+    --background-secondary-alt: var(--primary-630);
     --custom-channel-members-bg: transparent;
+    --background-modifier-accent: transparent;
     --home-background: transparent;
     --channels-default: rgb(155, 111, 111);
     --status-danger: rgba(250, 176, 176, 0.486);
     --text-link: rgb(250, 176, 176);
+}
+div[class^="mainContent_"]::before,
+h3[class^="membersGroup_"],
+h2[class^="privateChannelsHeaderContainer_"],
+div[class^="eyebrow_"]{
+    border-bottom: 1px solid;
+}
+
+h3[class^="name_"],
+h3[class^="membersGroup_"],
+h2[class^="privateChannelsHeaderContainer_"],
+div[class^="eyebrow_"]{
+    text-transform: capitalize!important;
+    text-align: center;
+    font-size: 16px;
+}
+div[class^="linkTop_"],
+h1[class^="defaultColor_"]{
+    text-transform: capitalize!important;
+}
+div[class^="overflow_"]{
+    overflow: visible;
+}
+h3[class^="membersGroup_"]{
+    padding: 20px;
 }
