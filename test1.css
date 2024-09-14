@@ -11,12 +11,22 @@ body{
 }
 :root{
     background: url(https://files.catbox.moe/p9rrmg.png)center/cover;
-    --background-secondary-alt: var(--primary-630);
-    --custom-channel-members-bg: transparent;
+    --background-mentioned: rgba(155, 111, 111, 0.3);
+    --background-message-highlight: rgba(155, 111, 111, 0.3);
     --background-modifier-accent: transparent;
-    --home-background: transparent;
+    --background-secondary-alt: var(--primary-630);
+    --brand-500 :rgb(155, 111, 111);
+    --brand-560: rgba(155, 111, 111, 0.3);
+    --brand-600: rgba(155, 111, 111, 0.4);
+    --brand-15a: rgba(155, 111, 111, 0.3);
     --channels-default: rgb(155, 111, 111);
+    --custom-channel-members-bg: transparent;
+    --home-background: transparent;
+    --info-warning-foreground: rgb(250, 176, 176);
+    --mention-background: rgb(155, 111, 111);
+    --mention-foreground: black;
     --status-danger: rgba(250, 176, 176, 0.486);
+    --text-brand: rgb(250, 176, 176);
     --text-link: rgb(250, 176, 176);
 }
 div[class^="mainContent_"]::before,
