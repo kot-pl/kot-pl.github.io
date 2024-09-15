@@ -6,11 +6,13 @@
 * @invite 0
 * @source kot-pl.github.io
 */
-body{
+#app-mount{
     opacity: 0.85;
 }
-:root{
+body{
     background: url(https://files.catbox.moe/p9rrmg.png)center/cover;
+}
+.theme-dark{
     --background-mentioned: rgba(155, 111, 111, 0.3);
     --background-message-highlight: rgba(155, 111, 111, 0.3);
     --background-modifier-accent: transparent;
@@ -30,6 +32,7 @@ body{
     --mention-background: rgb(155, 111, 111);
     --mention-foreground: black;
     --status-danger: rgba(250, 176, 176, 0.486);
+    --status-danger-background: rgba(250, 176, 176, 0.486);
     --text-brand: rgb(250, 176, 176);
     --text-link: rgb(250, 176, 176);
 }
