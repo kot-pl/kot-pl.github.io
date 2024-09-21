@@ -6,58 +6,45 @@
 * @invite 0
 * @source kot-pl.github.io
 */
-#app-mount{
-    opacity: 0.85;
-}
+@import url(https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap);
 body{
-    background: url(https://files.catbox.moe/p9rrmg.png)center/cover;
+	background-image: url(https://files.catbox.moe/p9rrmg.png);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
 }
-.theme-dark{
-    --background-mentioned: rgba(155, 111, 111, 0.3);
-    --background-message-highlight: rgba(155, 111, 111, 0.3);
-    --background-modifier-accent: transparent;
-    --background-secondary-alt: var(--primary-630);
-    --badge-brand-text: white;
-    --brand-260: rgb(155, 111, 111);
-    --brand-360: rgb(155, 111, 111);
-    --brand-400: rgb(155, 111, 111);
-    --brand-500 :rgb(155, 111, 111);
-    --brand-560: rgba(155, 111, 111, 0.3);
-    --brand-600: rgba(155, 111, 111, 0.4);
-    --brand-15a: rgba(155, 111, 111, 0.3);
-    --channels-default: rgb(155, 111, 111);
-    --custom-channel-members-bg: transparent;
-    --home-background: transparent;
-    --info-warning-foreground: rgb(250, 176, 176);
-    --mention-background: rgb(155, 111, 111);
-    --mention-foreground: black;
-    --status-danger: rgba(250, 176, 176, 0.486);
-    --status-danger-background: rgba(250, 176, 176, 0.486);
-    --text-brand: rgb(250, 176, 176);
-    --text-link: rgb(250, 176, 176);
+#app-mount{
+	opacity: 0.85;
 }
-div[class^="mainContent_"]::before,
-h3[class^="membersGroup_"],
-h2[class^="privateChannelsHeaderContainer_"],
-div[class^="eyebrow_"]{
-    border-bottom: 1px solid;
+:root{
+	--font-primary: "Shantell Sans";
+    --font-display: "Shantell Sans";
+    --font-headline: "Shantell Sans";
 }
-
-h3[class^="name_"],
-h3[class^="membersGroup_"],
-h2[class^="privateChannelsHeaderContainer_"],
-div[class^="eyebrow_"]{
-    text-transform: capitalize!important;
-    text-align: center;
-    font-size: 16px;
+div[class^="content_"]>div[class^="sidebar_"]{
+	background: transparent;
 }
-div[class^="linkTop_"],
-h1[class^="defaultColor_"]{
-    text-transform: capitalize!important;
+div[class^="sidebar_"]>:first-child {
+	margin-top: 10px;
+	margin-bottom: 10px;
+	border-radius: 10px!important;
+	overflow: hidden;
+	border: 1px solid rgba(255, 255, 255, 0.1);
 }
-div[class^="overflow_"]{
-    overflow: visible;
+section[class^="panels"]{
+	border-radius: 10px;
+    margin-bottom: 10px;
+	background: rgba(255, 255, 255, 0.1);
+	overflow: hidden;
+	border: 1px solid rgba(255, 255, 255, 0.1);
 }
-h3[class^="membersGroup_"]{
-    padding: 20px;
+section[class^="panels_"]>:nth-child(2){
+	background: transparent;
+}
+div[class^="base_"]>[class^="content_"]>:nth-child(2){
+	margin: 10px;
+	border-radius: 10px;
+	height: calc(100% - 19px);
+	overflow: hidden;
+	border: 1px solid rgba(255, 255, 255, 0.1);
 }
