@@ -6,7 +6,7 @@
 * @invite 0
 * @source kot-pl.github.io
 */
-@import url(https://fonts.googleapis.com/css2?family=Shantell+Sans&display=swap);
+@import "https://fonts.googleapis.com/css2?family=Mooli&display=swap";
 body{
 	background-image: url(https://files.catbox.moe/p9rrmg.png);
 	background-position: center;
@@ -17,9 +17,9 @@ body{
 	opacity: 0.85;
 }
 :root{
-	--font-primary: "Shantell Sans";
-    --font-display: "Shantell Sans";
-    --font-headline: "Shantell Sans";
+	--font-primary: "Mooli";
+    --font-display: "Mooli";
+    --font-headline: "Mooli";
 }
 div[class^="content_"]>div[class^="sidebar_"]{
 	background: transparent;
