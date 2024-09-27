@@ -47,3 +47,8 @@ div[class^="channelTextArea_"]>:first-child{
 div[class^="channelAppLauncher_"]{
     display: none;
 }
+
+div[class^="jumpToPresentBar_"]{
+    right: 15px;
+    background-color: var(--brand-500);
+}
