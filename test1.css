@@ -1,50 +1,43 @@
-/**
-* @name kot test1
-* @version 1
-* @description test1
-* @author kot-pl
-* @invite 0
-* @source kot-pl.github.io
-*/
 @import "https://fonts.googleapis.com/css2?family=Mooli&display=swap";
-body{
-	background-image: url(https://files.catbox.moe/p9rrmg.png);
-	background-position: center;
+body {
+	background-image: var(--bg) !important;
+    background-repeat: none;
+    background-position: center;
 	background-size: cover;
-	background-repeat: no-repeat;
 }
-#app-mount{
-	opacity: 0.85;
-}
-:root{
+#app-mount {
+    opacity: 0.85;
+	display: transparent;
+} 
+.theme-dark {
+    /* 
+    https://www.reddit.com/r/oneshot/comments/ghzwj1/made_my_own_version_of_the_wallpaper_from_the/ 
+    */
+    --bg: url(https://w.wallhaven.cc/full/r7/wallhaven-r7587j.jpg);
+    --background-primary: #111111;
+    --background-secondary: #202020;
+    --background-secondary-alt: #202020;
+    --background-tertiary: #212121;
+	--background-message-hover: #222222;
+	--background-floating: #202020;
+	--modal-background: #202020;
+	--modal-footer-background: #202020;
+	--autocomplete-bg: #202020;
+    --bg-base-primary: #111111;
+	--custom-channel-members-bg: #111111;
+    --home-background: #111111;
 	--font-primary: "Mooli";
     --font-display: "Mooli";
     --font-headline: "Mooli";
 }
-div[class^="content_"]>div[class^="sidebar_"]{
-	background: transparent;
+
+div[class^="hoverBarButton_"][aria-label^="Click to react"],
+div[class^="hoverBarButton_"][aria-label^="Click to remove"],
+div[class^="buttonsInner_"]>[class^="separator_"]{
+    display: none;
 }
-div[class^="sidebar_"]>:first-child {
-	margin-top: 10px;
-	margin-bottom: 10px;
-	border-radius: 10px!important;
-	overflow: hidden;
-	border: 1px solid rgba(255, 255, 255, 0.1);
-}
-section[class^="panels"]{
-	border-radius: 10px;
-    margin-bottom: 10px;
-	background: rgba(255, 255, 255, 0.1);
-	overflow: hidden;
-	border: 1px solid rgba(255, 255, 255, 0.1);
-}
-section[class^="panels_"]>:nth-child(2){
-	background: transparent;
-}
-div[class^="base_"]>[class^="content_"]>:nth-child(2){
-	margin: 10px;
-	border-radius: 10px;
-	height: calc(100% - 19px);
-	overflow: hidden;
-	border: 1px solid rgba(255, 255, 255, 0.1);
+
+h3[class^="membersGroup_"]:has([class^="headerContainer_"]),
+div[data-list-item-id^="members-"]>[class^="container_"]{
+    display: none;
 }
