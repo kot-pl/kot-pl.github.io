@@ -10,9 +10,6 @@ body {
 	display: transparent;
 } 
 .theme-dark {
-    /* 
-    https://www.reddit.com/r/oneshot/comments/ghzwj1/made_my_own_version_of_the_wallpaper_from_the/ 
-    */
     --bg: url(https://w.wallhaven.cc/full/r7/wallhaven-r7587j.jpg);
     --background-primary: #111111;
     --background-secondary: #202020;
@@ -39,5 +36,14 @@ div[class^="buttonsInner_"]>[class^="separator_"]{
 
 h3[class^="membersGroup_"]:has([class^="headerContainer_"]),
 div[data-list-item-id^="members-"]>[class^="container_"]{
+    display: none;
+}
+
+div[class^="channelTextArea_"]>:first-child{
+    background: black;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+div[class^="channelAppLauncher_"]{
     display: none;
 }
