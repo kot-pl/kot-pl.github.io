@@ -1,3 +1,10 @@
+/**
+* @name kot test
+* @version 1
+* @description test
+* @author kot-pl
+* @source kot-pl.github.io
+*/
 @import "https://fonts.googleapis.com/css2?family=Mooli&display=swap";
 body {
 	background-image: var(--bg) !important;
