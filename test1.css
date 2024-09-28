@@ -35,6 +35,7 @@ body {
 	--font-primary: "Mooli";
     --font-display: "Mooli";
     --font-headline: "Mooli";
+    --search-popout-option-fade-hover: transparent;
 }
 div[class^="hoverBarButton_"]:has([class^="emoji"]),
 div[class^="buttonsInner_"]>[class^="separator_"],
