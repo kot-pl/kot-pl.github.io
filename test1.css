@@ -27,27 +27,19 @@ body {
     --font-display: "Mooli";
     --font-headline: "Mooli";
 }
-
-div[class^="hoverBarButton_"][aria-label^="Click to react"],
-div[class^="hoverBarButton_"][aria-label^="Click to remove"],
-div[class^="buttonsInner_"]>[class^="separator_"]{
-    display: none;
-}
-
+div[class^="hoverBarButton_"]:has([class^="emoji"]),
+div[class^="buttonsInner_"]>[class^="separator_"],
 h3[class^="membersGroup_"]:has([class^="headerContainer_"]),
-div[data-list-item-id^="members-"]>[class^="container_"]{
+div[data-list-item-id^="members-"]>[class^="container_"],
+div[class^="channelAppLauncher_"],
+div[class^="menu_"]>div>div>[id="message-save-for-later-upsell"],
+div[class^="toolbar_"]>div[class^="iconWrapper_"]:has([d^="M4 5a3 3 0 0 1"]){
     display: none;
 }
-
 div[class^="channelTextArea_"]>:first-child{
     background: black;
     border: 1px solid rgba(255, 255, 255, 0.3);
 }
-
-div[class^="channelAppLauncher_"]{
-    display: none;
-}
-
 div[class^="jumpToPresentBar_"]{
     right: 15px;
     background-color: var(--brand-500);
