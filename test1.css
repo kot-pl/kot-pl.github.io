@@ -21,6 +21,7 @@ body {
 	--modal-footer-background: #202020;
 	--autocomplete-bg: #202020;
     --bg-base-primary: #111111;
+    --channeltextarea-background: black;
 	--custom-channel-members-bg: #111111;
     --home-background: #111111;
 	--font-primary: "Mooli";
@@ -35,10 +36,6 @@ div[class^="channelAppLauncher_"],
 div[class^="menu_"]>div>div>[id="message-save-for-later-upsell"],
 div[class^="toolbar_"]>div[class^="iconWrapper_"]:has([d^="M4 5a3 3 0 0 1"]){
     display: none;
-}
-div[class^="channelTextArea_"]>:first-child{
-    background: black;
-    border: 1px solid rgba(255, 255, 255, 0.3);
 }
 div[class^="jumpToPresentBar_"]{
     right: 15px;
