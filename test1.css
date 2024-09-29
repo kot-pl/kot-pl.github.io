@@ -42,7 +42,8 @@ div[class^="buttonsInner_"]>[class^="separator_"],
 h3[class^="membersGroup_"]:has([class^="headerContainer_"]),
 div[data-list-item-id^="members-"]>[class^="container_"],
 div[class^="channelAppLauncher_"],
-div[class^="menu_"]>div>div>[id="message-save-for-later-upsell"],
+[id="message-save-for-later-upsell"],
+[id="message-actions-save-for-later-upsell"],
 div[class^="toolbar_"]>div[class^="iconWrapper_"]:has([d^="M4 5a3 3 0 0 1"]){
     display: none;
 }
