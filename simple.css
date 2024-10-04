@@ -55,7 +55,7 @@ div[class^="channelAppLauncher_"],
 div[class^="toolbar_"]>div[class^="iconWrapper_"]:has([d^="M4 5a3 3 0 0 1"]){
     display: none;
 }
-.menu_d90b3d,.root_f9a4c9:not(.modal_a60b1b),.tooltipPrimary_b6c360,.container_e664f3,.messagesPopoutWrap_ac90a2,.container_eedf95,.container_f1c3d9,.container_f8a938,.contentWrapper_af5dbb,.animatorRight_f88ae3>.wrapper_c6ee36,.animatorLeft_f88ae3>.wrapper_c6ee36,.autocomplete_bcc24e,.userPopoutOuter_c69a7b,.popout_c5b389,.debugPanelStandalone_feab95,.noiseCancellationPopout_adcaac,.popout_f6639d,.container_c22357,.bar_eba0ba,.container_e88961{
+.menu_d90b3d,.root_f9a4c9:not(.modal_a60b1b),.tooltipPrimary_b6c360,.container_e664f3,.messagesPopoutWrap_ac90a2,.container_eedf95,.container_f1c3d9,.container_f8a938,.contentWrapper_af5dbb,.animatorRight_f88ae3>.wrapper_c6ee36,.animatorLeft_f88ae3>.wrapper_c6ee36,.autocomplete_bcc24e,.userPopoutOuter_c69a7b,.popout_c5b389,.debugPanelStandalone_feab95,.noiseCancellationPopout_adcaac,.popout_f6639d,.container_c22357,.bar_eba0ba,.container_e88961,.reactionTooltip_fba897{
     background: #0d1117;
     border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 8px;
