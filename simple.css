@@ -40,7 +40,7 @@ body{
     --legacy-elevation-border: transparent;
 }
 div[class^="base_"]>div[class^="content_"]>:nth-child(2),[class^="contentRegion_"]{
-    background-image: linear-gradient(#181818a9,#181818a9),url(https://w.wallhaven.cc/full/5g/wallhaven-5g99o3.png);
+    background-image: linear-gradient(#181818bd,#181818bd),url(https://w.wallhaven.cc/full/5g/wallhaven-5g99o3.png);
     border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 8px;
     overflow: hidden;
