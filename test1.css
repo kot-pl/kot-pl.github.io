@@ -7,35 +7,43 @@
 * @source kot-pl.github.io
 */
 @import "https://fonts.googleapis.com/css2?family=Mooli&display=swap";
-body {
-	background-image: var(--bg) !important;
-    background-repeat: none;
-    background-position: center;
-	background-size: cover;
+body{
+    background-color: #0d1117;
+    font-family: 'Mooli', monospace;
 }
-#app-mount {
-    opacity: 0.85;
-	display: transparent;
-} 
-.theme-dark {
-    --bg: url(https://w.wallhaven.cc/full/r7/wallhaven-r7587j.jpg);
-    --background-primary: #111111;
-    --background-secondary: #202020;
-    --background-secondary-alt: #202020;
-    --background-tertiary: #212121;
-	--background-message-hover: #222222;
-	--background-floating: #202020;
-	--modal-background: #202020;
-	--modal-footer-background: #202020;
-	--autocomplete-bg: #202020;
-    --bg-base-primary: #111111;
-    --channeltextarea-background: black;
-	--custom-channel-members-bg: #111111;
-    --home-background: #111111;
-	--font-primary: "Mooli";
-    --font-display: "Mooli";
-    --font-headline: "Mooli";
-    --search-popout-option-fade-hover: transparent;
+.theme-dark{
+    --primary-600: transparent;
+    --primary-630: transparent;
+    --primary-660: transparent;
+    --primary-700: transparent;
+    --primary-800: transparent;
+    --background-nested-floating: #0d1117;
+    --channeltextarea-background:#0d1117;
+    --home-background: transparent;
+    --text-brand: #4586a0;
+    --text-link: #4586a0;
+    --text-normal: #c9d1d9;
+    --text-muted: #a1a1a1;
+    --text-positive: #6896a8;
+    --status-positive: #6896a8;
+    --status-danger: #4586a0;
+    --scrollbar-auto-thumb: #4586a0;
+    --scrollbar-thin-thumb: #4586a0;
+    --interactive-normal: #a1a1a1;
+    --interactive-hover: #4586a0;
+    --interactive-active: #4586a0;
+    --interactive-muted: #6b6b6b;
+    --input-background: #0d1117;
+    --menu-item-default-active-bg: var(--background-modifier-selected);
+    --menu-item-default-hover-bg: var(--background-modifier-hover);
+    --legacy-elevation-high: transparent;
+    --legacy-elevation-border: transparent;
+}
+div[class^="base_"]>div[class^="content_"]>:nth-child(2),[class^="contentRegion_"]{
+    background-image: linear-gradient(#181818bd,#181818bd),url(https://w.wallhaven.cc/full/5g/wallhaven-5g99o3.png);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+    overflow: hidden;
 }
 div[class^="hoverBarButton_"]:has([class^="emoji"]),
 div[class^="buttonsInner_"]>[class^="separator_"],
@@ -47,7 +55,48 @@ div[class^="channelAppLauncher_"],
 div[class^="toolbar_"]>div[class^="iconWrapper_"]:has([d^="M4 5a3 3 0 0 1"]){
     display: none;
 }
+[role="menu"]
+,div[class^="focusLock"]:first-child>:not([class^="browser_"]),
+[role="dialog"]>div[class^="browser_"][class*="container_"],
+div[class^="messagesPopoutWrap_"],
+section[class^="positionContainer_"]>div[class^="drawerSizingWrapper_"]>div[class^="contentWrapper_"],
+div[class^="animatorLeft_"]>:first-child,
+div[class^="animatorRight_"]>:first-child,
+div[class^="channelTextArea_"]>div[class^="autocomplete_"],
+div[class^="tooltipContent_"],
+div[class^="accountProfilePopoutWrapper_"],
+div[class^="container_"][style="width: 320px;"],
+div[class^="containerPadding_"]>div[class^="bar_"],
+div[class^="reactionTooltip_"],
+div[class*="recentMentionsPopout_"],
+div[class^="debugPanelStandalone_"],
+div[class^="noiseCancellationPopout_"],
+div[class^="animatorTop_"]>div[class^="picker_"]{
+    background: #0d1117!important;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-radius: 8px;
+}
+div[class^="attachedBars_"],
 div[class^="jumpToPresentBar_"]{
-    right: 15px;
-    background-color: var(--brand-500);
+    background: hsl(var(--brand-500-hsl) / 0.5);
+    right: 16px;
+}
+div[class^="chatLayerWrapper_"]>:first-child,
+div[class^="popout_"]:has([class^="option_"]){
+    background: #0d1117!important;
+}
+div[class^="callContainer_"]{
+    background: transparent;
+}
+div[class^="footerSeparator_"]{
+    display: none;
+}
+
+[data-list-item-id="guildsnav___home"]::before{
+    position: absolute;
+    content: "";
+    inset: unset;
+    height: 48px;
+    width: 48px;
+    background: url(https://files.catbox.moe/w5bhb7.png)center;
 }
