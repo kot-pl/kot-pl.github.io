@@ -46,7 +46,7 @@ div[class^="base_"]>div[class^="content_"]>:nth-child(2),[class^="contentRegion_
     margin: 5px;
 }
 div[class^="hoverBarButton_"]:has([class^="emoji"]),
-div[class^="hoverBarButton_"][aria-label="Forward"],
+[aria-label="Forward"],
 div[class^="buttonsInner_"]>[class^="separator_"],
 h3[class^="membersGroup_"]:has([class^="headerContainer_"]),
 div[data-list-item-id^="members-"]>[class^="container_"],
