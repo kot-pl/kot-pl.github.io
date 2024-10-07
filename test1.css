@@ -12,14 +12,13 @@ body{
     font-family: 'Mooli', monospace;
 }
 .theme-dark{
-    --background-primary: transparent;
-    --background-secondary: transparent;
-    --background-secondary-alt: transparent;
-    --background-tertiary: transparent;
-    --background-floating: transparent;
+    --primary-600: transparent;
+    --primary-630: transparent;
+    --primary-660: transparent;
+    --primary-700: transparent;
+    --primary-800: transparent;
     --channeltextarea-background:#0d1117;
     --home-background: transparent;
-    --modal-footer-background: transparent;
     --text-brand: #4586a0;
     --text-link: #4586a0;
     --text-normal: #c9d1d9;
@@ -57,7 +56,8 @@ div[class^="channelAppLauncher_"],
 div[class^="toolbar_"]>div[class^="iconWrapper_"]:has([d^="M4 5a3 3 0 0 1"]){
     display: none;
 }
-[role="menu"],
+div[class*="layer_"]>[class^="menu_"],
+div[class^="submenu_"],
 div[class^="focusLock"]:first-child>:not([class^="browser_"],[class^="carouselModal_"]),
 [role="dialog"]>div[class^="browser_"][class*="container_"],
 div[class^="messagesPopoutWrap_"],
