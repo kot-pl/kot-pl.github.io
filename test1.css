@@ -43,6 +43,7 @@ div[class^="base_"]>div[class^="content_"]>:nth-child(2),[class^="contentRegion_
     border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 8px;
     overflow: hidden;
+    margin: 5px;
 }
 div[class^="hoverBarButton_"]:has([class^="emoji"]),
 div[class^="hoverBarButton_"]:has([d^="M21.7 7.3a1 1 0 0 1 0"]),
@@ -92,7 +93,9 @@ div[class^="buttons_"]>div[class^="buttonsInner_"]{
 div[class^="callContainer_"]{
     background: transparent;
 }
-div[class^="footerSeparator_"]{
+div[class^="footerSeparator_"],
+div[class^="buttonWrapper_"]>div[class^="lottieIcon_"]>:first-child,
+div[class^="giftIconButton_"]{
     display: none;
 }
 [data-list-item-id="guildsnav___home"]::before{
