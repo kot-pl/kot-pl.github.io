@@ -47,7 +47,7 @@ div[class^="base_"]>div[class^="content_"]>:nth-child(2),[class^="contentRegion_
     margin: 5px;
 }
 div[class^="hoverBarButton_"]:has([class^="emoji"]),
-div[class^="hoverBarButton_"]:has([d^="M21.7 7.3a1 1 0 0 1 0"]),
+div[class^="hoverBarButton_"][aria-label="Forward"],
 div[class^="buttonsInner_"]>[class^="separator_"],
 h3[class^="membersGroup_"]:has([class^="headerContainer_"]),
 div[data-list-item-id^="members-"]>[class^="container_"],
@@ -63,7 +63,7 @@ div[class^="focusLock"]:first-child>:not([class^="browser_"],[class^="carouselMo
 div[class^="messagesPopoutWrap_"],
 section[class^="positionContainer_"]>div[class^="drawerSizingWrapper_"]>div[class^="contentWrapper_"],
 div[class^="animatorLeft_"]>:first-child,
-div[class^="animatorRight_"]>:first-child>:not([class^="menu_"]),
+div[class^="animatorRight_"]>:first-child,
 div[class^="animatorTop_"]>:first-child,
 div[class^="animatorBottom_"]>:first-child,
 div[class^="channelTextArea_"]>div[class^="autocomplete_"],
