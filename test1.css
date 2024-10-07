@@ -12,12 +12,11 @@ body{
     font-family: 'Mooli', monospace;
 }
 .theme-dark{
-    --primary-600: transparent;
-    --primary-630: transparent;
-    --primary-660: transparent;
-    --primary-700: transparent;
-    --primary-800: transparent;
-    --background-nested-floating: #0d1117;
+    --background-primary: transparent;
+    --background-secondary: transparent;
+    --background-secondary-alt: transparent;
+    --background-tertiary: transparent;
+    --background-floating: transparent;
     --channeltextarea-background:#0d1117;
     --home-background: transparent;
     --text-brand: #4586a0;
@@ -56,8 +55,8 @@ div[class^="channelAppLauncher_"],
 div[class^="toolbar_"]>div[class^="iconWrapper_"]:has([d^="M4 5a3 3 0 0 1"]){
     display: none;
 }
-[role="menu"]
-,div[class^="focusLock"]:first-child>:not([class^="browser_"]),
+[role="menu"],
+div[class^="focusLock"]:first-child>:not([class^="browser_"],[class^="carouselModal_"]),
 [role="dialog"]>div[class^="browser_"][class*="container_"],
 div[class^="messagesPopoutWrap_"],
 section[class^="positionContainer_"]>div[class^="drawerSizingWrapper_"]>div[class^="contentWrapper_"],
@@ -85,7 +84,9 @@ div[class^="jumpToPresentBar_"]{
     right: 16px;
 }
 div[class^="chatLayerWrapper_"]>:first-child,
-div[class^="popout_"]:has([class^="option_"]){
+div[class^="popout_"]:has([class^="option_"]),
+div[id="slate-toolbar"],
+div[class^="buttons_"]>div[class^="buttonsInner_"]{
     background: #0d1117!important;
 }
 div[class^="callContainer_"]{
@@ -94,7 +95,6 @@ div[class^="callContainer_"]{
 div[class^="footerSeparator_"]{
     display: none;
 }
-
 [data-list-item-id="guildsnav___home"]::before{
     position: absolute;
     content: "";
