@@ -91,6 +91,9 @@ div[id="slate-toolbar"],
 div[class^="buttons_"]>div[class^="buttonsInner_"]{
     background: #0d1117!important;
 }
+article[class^="embedWrapper_"]{
+    border: 2px dashed rgba(179, 245, 245, 0.404)!important;
+}
 div[class^="callContainer_"]{
     background: none;
 }
