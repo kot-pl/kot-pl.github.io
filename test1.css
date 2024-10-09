@@ -6,10 +6,14 @@
 * @invite 0
 * @source kot-pl.github.io
 */
-@import "https://fonts.googleapis.com/css2?family=Mooli&display=swap";
 body{
     background-color: #0d1117;
-    font-family: 'Mooli', monospace;
+}
+:not(#a#b#c),
+:not(#a#b#c):after,
+:not(#a#b#c):before{
+    animation:none !important;
+    transition:none !important;
 }
 .theme-dark{
     --primary-600: none;
