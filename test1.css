@@ -48,6 +48,7 @@ div[class^="base_"]>div[class^="content_"]>:nth-child(n + 2),[class^="contentReg
     border-radius: 8px;
     overflow: hidden;
     margin: 5px;
+    height: calc(100% - 15px);
 }
 div[class^="hoverBarButton_"]:has([class^="emoji"]),
 [aria-label="Forward"],
