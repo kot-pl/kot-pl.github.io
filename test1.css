@@ -9,20 +9,18 @@
 body{
     background-color: #0d1117;
 }
-:not(#a#b#c),
-:not(#a#b#c):after,
-:not(#a#b#c):before{
-    animation:none !important;
-    transition:none !important;
+*, *::after, *::before {
+  animation: none!important;
+  transition: none!important;
 }
 .theme-dark{
-    --primary-600: none;
-    --primary-630: none;
-    --primary-660: none;
-    --primary-700: none;
-    --primary-800: none;
+    --primary-600: transparent;
+    --primary-630: transparent;
+    --primary-660: transparent;
+    --primary-700: transparent;
+    --primary-800: transparent;
     --channeltextarea-background:#0d1117;
-    --home-background: none;
+    --home-background: transparent;
     --text-brand: #4586a0;
     --text-link: #4586a0;
     --text-normal: #c9d1d9;
@@ -98,9 +96,6 @@ div[class^="popout_"]:has([class^="option_"]),
 div[id="slate-toolbar"],
 div[class^="buttons_"]>div[class^="buttonsInner_"]{
     background: #0d1117!important;
-}
-article[class^="embedWrapper_"]{
-    border: 2px dashed rgba(179, 245, 245, 0.404)!important;
 }
 div[class^="callContainer_"]{
     background: none;
