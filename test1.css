@@ -42,7 +42,7 @@ body{
     --legacy-elevation-high: none;
     --legacy-elevation-border: none;
 }
-div[class^="base_"]>div[class^="content_"]>:nth-child(n + 2),[class^="contentRegion_"]{
+div[class^="base_"]>div[class^="content_"]>:nth-child(n + 2):not([class^="jumbleWrapper_"]),[class^="contentRegion_"]{
     background-image: linear-gradient(#181818bd,#181818bd),url(https://w.wallhaven.cc/full/5g/wallhaven-5g99o3.png);
     border: 2px solid rgba(255, 255, 255, 0.3);
     border-radius: 8px;
