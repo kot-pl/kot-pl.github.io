@@ -39,6 +39,7 @@ body{
     --menu-item-default-hover-bg: var(--background-modifier-hover);
     --legacy-elevation-high: none;
     --legacy-elevation-border: none;
+    --radius-xs: 10px;
 }
 div[class^="base_"]>div[class^="content_"]>:nth-child(n + 2):not([class^="jumbleWrapper_"]),[class^="contentRegion_"]{
     background-image: linear-gradient(#181818bd,#181818bd),url(https://w.wallhaven.cc/full/5g/wallhaven-5g99o3.png);
