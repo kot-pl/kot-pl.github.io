@@ -6,7 +6,7 @@
 * @invite 0
 * @source kot-pl.github.io
 */
-body{
+#app-mount{
     background-color: #0d1117;
 }
 *, *::after, *::before {
@@ -19,6 +19,10 @@ body{
     --primary-660: transparent;
     --primary-700: transparent;
     --primary-800: transparent;
+    --background-modifier-selected: rgba(81, 124, 150, 0.6);
+    --background-modifier-hover: rgba(81, 124, 150, 0.4);
+    --background-modifier-active: rgba(81, 124, 150, 0.5);
+    --bg-mod-faint: rgba(81, 124, 150, 0.2);
     --channeltextarea-background:#0d1117;
     --home-background: transparent;
     --text-brand: #4586a0;
