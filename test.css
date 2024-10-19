@@ -6,37 +6,101 @@
 * @invite 0
 * @source kot-pl.github.io
 */
+.stop-animations * {
+    animation: none!important;
+    transition: none!important;
+    transition-duration: 0ms!important;
+}
 body{
+	background-image: var(--bg);
+    background-position: center;
+	background-size: cover;
     opacity: 0.85;
 }
-:root{
-    background: url(https://files.catbox.moe/p9rrmg.png)center/cover;
-    --primary-660: var(--background-secondary);
-    --primary-800: var(--background-secondary);
-    --background-accent: rgb(155, 97, 106);
-    --background-mentioned: rgba(155, 97, 106, 0.247);
-    --background-mentioned-hover: rgba(155, 97, 106, 0.247);
-    --background-message-highlight: rgba(155, 97, 106, 0.247);
-    --button-secondary-background: var(--brand-500);
-    --button-secondary-background-hover: var(--brand-560);
-    --button-secondary-background-active: var(--brand-600);
-    --info-warning-foreground: var(--brand-500);
-    --header-primary: rgb(155, 97, 106);
-    --interactive-active: rgb(155, 97, 106);
-    --text-brand: rgb(155, 97, 106);
-    --text-link: rgb(226, 151, 162);
-    --text-muted: rgb(155, 97, 106);
-    --status-danger: rgb(194, 105, 119);
-    --menu-item-default-active-bg: var(--background-modifier-selected);
-    --menu-item-default-hover-bg: var(--background-modifier-hover);
-    --mention-foreground: var(--text-normal);
-    --mention-background: var(--brand-15a);
-    --brand-260: white;
-    --brand-400: rgb(194, 105, 119);
-    --brand-15a: rgba(194, 105, 118, 0.43);
-    --brand-500: rgb(155, 97, 106);
-    --brand-560: rgba(194, 105, 118, 0.43);
-    --brand-600: rgb(204, 113, 127);
-    --control-brand-foreground-new: var(--brand-600);
-    --text-positive: var(--brand-600);
+.theme-dark {
+    --bg: url(https://files.catbox.moe/rw2ol6.png);
+    --background-primary: #14181e;
+    --background-secondary: #14181e;
+    --background-secondary-alt: #14181e;
+    --background-tertiary: #14181e;
+	--background-floating: #14181e;
+    --background-message-hover: #4949498c;
+    --bg-mod-faint: transparent;
+    --bg-mod-subtle: var(--background-primary);
+	--home-background: var(--background-primary);
+	--autocomplete-bg: var(--background-primary);
+	--modal-background: var(--background-primary);
+	--modal-footer-background: transparent;
+    --channeltextarea-background: transparent;
+    --input-background: #322a3d6d;
+    --search-popout-option-fade: transparent;
+    --search-popout-option-fade-hover: #11111100;
+    --scrollbar-auto-thumb: #322a3d;
+    --scrollbar-thin-thumb: #322a3d;
+    --scrollbar-auto-track: transparent;
+    --elevation-high: 0 0 0 1px hsl(250 calc(1 * 10%) 20% / 1);
+    --legacy-elevation-high: 0 0 0 1px hsl(250 calc(1 * 10%) 20% / 1);
+    --shadow-high: 0 0 0 1px hsl(250 calc(1 * 10%) 20% / 1);
+    --shadow-medium: 0 0 0 1px hsl(250 calc(1 * 10%) 20% / 1);
+}
+[class^="panels"]{
+    order: -1;
+}
+/*horizontal server list*/
+[class^="container"]>[class^="base"]{
+    margin-top: 70px;
+}
+[class*="guilds"] {
+    position: fixed;
+    height: 100vw;
+    margin-top: 70px;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+}
+[class^="blobContainer"]>[class^="wrapper"],
+[class^="listItemWrapper"]>[class^="wrapper"],
+[class^="folderIconWrapper"]{
+    transform: rotate(90deg)
+}
+[class^="tooltip"][class*="listItemTooltip"]{
+    margin-top: 5px;
+}
+/*popoup fix*/
+[class^="recentMentionsPopout"],
+[class^="messagesPopoutWrap"]{
+	max-height: 80vh!important;
+}
+/*chat bubbles*/
+[class*="wrapper"][class*="cozy"]>[class^="contents"],[class*="wrapper"][class*="cozy"]>[id^="message-accessories"]{
+    background: rgba(70, 78, 130, 0.149);
+    border-radius: 10px;
+    margin-top: 5px;
+    padding: 10px;
+    box-shadow: 0 3px 20px rgba(0, 0, 0, 0.7);
+    max-width: max-content;
+}
+/*sidebar profle account*/
+[class^="accountProfilePopoutWrapper"]{
+    left: 0;
+}
+/*wide sidebar*/
+[class^="sidebar"],
+[class^="bannerImg"],
+[class^="bannerImage"]{
+	width: 300px;
+}
+[class^="privateChannels"]>[class^="scroller"]>[class^="content"]>[class^="channel"]{
+    max-width: 300px;
+}
+[class^="panels"]>[class^="container"]>[class^="flex"]{
+    margin-left: calc(20% + 5px);
+}
+/*unreadbar*/
+[class^="unread"][class*="unreadImportant"]{
+    height: 85%;
+    width: 2px;
+    top: 7%;
+    left: 0;
+    margin-top: 0px;
+	background-color: rgba(182, 95, 223, 0.822);
 }
