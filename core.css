@@ -7,47 +7,49 @@
 * @source kot-pl.github.io
 */
 body{
-    background-image: url(https://files.catbox.moe/p9rrmg.png);
+    background-image: url(https://w.wallhaven.cc/full/2y/wallhaven-2ymww9.png);
     background-size: cover;
     background-attachment: fixed;
     opacity: 0.85;
 }
 .theme-dark{
-    --background-accent: rgb(155, 97, 106);
-    --background-primary: var(--background-secondary);
-    --background-secondary-alt: var(--background-secondary);
-    --background-floating: var(--background-secondary);
-    --background-tertiary: var(--background-secondary);
-    --background-mentioned: rgba(155, 97, 106, 0.247);
-    --background-mentioned-hover: rgba(155, 97, 106, 0.247);
-    --background-message-highlight: rgba(155, 97, 106, 0.247);
+    --background-accent: rgb(113, 97, 155);
+    --background-primary: var(--bg-surface-overlay);
+    --background-secondary: var(--bg-surface-overlay);
+    --background-secondary-alt: var(--bg-surface-overlay);
+    --background-floating: var(--bg-surface-overlay);
+    --background-tertiary: var(--bg-surface-overlay);
+    --bg-base-primary: var(--bg-surface-overlay);
+    --home-background: none;
+    --background-mentioned: rgba(139, 97, 155, 0.247);
+    --background-mentioned-hover: rgba(139, 97, 155, 0.247);
+    --background-message-highlight: rgba(139, 97, 155, 0.247);
     --button-secondary-background: var(--brand-500);
     --button-secondary-background-hover: var(--brand-560);
     --button-secondary-background-active: var(--brand-600);
+    --badge-brand-text:rgb(155, 97, 150);
     --info-warning-foreground: var(--brand-500);
     --shadow-high: 0 0 2px black;
-    --header-primary: rgb(155, 97, 106);
-    --interactive-active: rgb(155, 97, 106);
-    --text-brand: rgb(155, 97, 106);
-    --text-link: rgb(226, 151, 162);
-    --text-muted: rgb(155, 97, 106);
-    --status-danger: rgb(194, 105, 119);
+    --header-primary: rgb(155, 97, 150);
+    --interactive-active: rgb(155, 97, 150);
+    --text-brand: rgb(145, 97, 155);
+    --text-link: rgb(220, 151, 226);
+    --text-muted: rgb(153, 97, 155);
+    --status-danger: rgb(194, 105, 194);
     --menu-item-default-active-bg: var(--background-modifier-selected);
     --menu-item-default-hover-bg: var(--background-modifier-hover);
     --mention-foreground: var(--text-normal);
     --mention-background: var(--brand-15a);
     --brand-260: white;
-    --brand-400: rgb(194, 105, 119);
-    --brand-15a: rgba(194, 105, 118, 0.43);
-    --brand-500: rgb(155, 97, 106);
-    --brand-560: rgba(194, 105, 118, 0.43);
-    --brand-600: rgb(204, 113, 127);
+    --brand-400: rgb(176, 105, 194);
+    --brand-15a: rgba(179, 105, 194, 0.43);
+    --brand-500: rgb(143, 97, 155);
+    --brand-560: rgba(194, 105, 172, 0.43);
+    --brand-600: rgb(201, 113, 204);
 }
-div[class^="content_"]>div[class^="chat_"],
-div[class^="content_"]>div[class^="sidebar_"],
-div[class^="content_"]>main[class^="container_"]{
+div[class^="base_"]>div[class^="content_"]>:nth-child(n + 2),div[class^="contentTransitionWrap_"]>div[class^="contentRegionScroller_"]{
     margin: 10px;
-    border: 2px dashed rgba(194, 105, 118, 0.43);
+    border: 2px solid rgba(217, 155, 253, 0.43);
     border-radius: 10px!important;
 }
 ::-webkit-scrollbar-thumb{
