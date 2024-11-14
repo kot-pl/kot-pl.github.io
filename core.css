@@ -49,11 +49,6 @@ body{
     --brand-560: rgba(194, 105, 172, 0.43);
     --brand-600: rgb(201, 113, 204);
 }
-div[class^="base_"]>div[class^="content_"]>:nth-child(n + 2),div[class^="contentTransitionWrap_"]>div[class^="contentRegionScroller_"]{
-    margin: 10px;
-    border: 2px solid rgba(217, 155, 253, 0.43);
-    border-radius: 10px!important;
-}
 ::-webkit-scrollbar-thumb{
     background-color: rgba(128, 128, 128, 0.247)!important;
 }
