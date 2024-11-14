@@ -6,11 +6,13 @@
 * @invite 0
 * @source kot-pl.github.io
 */
+#app-mount{
+    opacity: 0.85;
+}
 body{
     background-image: url(https://w.wallhaven.cc/full/2y/wallhaven-2ymww9.png);
     background-size: cover;
     background-attachment: fixed;
-    opacity: 0.85;
 }
 .theme-dark{
     --background-accent: rgb(113, 97, 155);
