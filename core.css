@@ -141,7 +141,8 @@ body {
 [class^="channelTextArea"]{
     border: 2px solid rgba(130, 22, 22, 0.445);
 }
-[class^="channelTextArea"]>[class^="attachedBars"]{
+[class^="channelTextArea"]>[class^="attachedBars"],
+[class^="channelTextArea"]>[class^="stackedBars"]{
     background: transparent;
 }
 /*sidebar background fix*/
