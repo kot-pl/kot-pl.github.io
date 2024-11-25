@@ -6,81 +6,195 @@
 * @invite 0
 * @source kot-pl.github.io
 */
-#app-mount{
+@import "https://fonts.googleapis.com/css2?family=Mooli&display=swap";
+:root,.theme-dark{
+    --bg-mod-subtle: var(--background-accent);
+    --bg-mod-faint: var(--background-primary);
+    --home-card-resting-border: rgba(130, 22, 22, 0.445);
+    --background-accent: rgba(130, 22, 22, 0.445);
+    --background-mentioned: rgba(130, 22, 22, 0.445);
+    --background-mentioned-hover: rgba(130, 22, 22, 0.445);
+    --background-modifier-accent: rgba(130, 22, 22, 0.445);
+    --background-message-highlight: rgba(130, 22, 22, 0.445);
+    --background-message-hover: rgba(130, 22, 22, 0.445);
+    --background-modifier-active: rgba(130, 22, 22, 0.445);
+    --background-modifier-hover: rgba(130, 22, 22, 0.445);
+    --background-modifier-selected: rgba(130, 22, 22, 0.445);
+    --button-secondary-background: rgba(130, 22, 22, 0.9);
+    --button-secondary-background-hover: rgba(130, 22, 22, 0.445);
+    --button-secondary-background-active: rgba(130, 22, 22, 0.9);
+    --mention-foreground: white;
+    --mention-background: rgba(130, 22, 22, 0.9);
+    --modal-footer-background: hsl(10 calc(1 * 25%) 8% / 1);
+    --input-background: rgba(130, 22, 22, 0.445);
+    --info-warning-foreground: rgba(130, 22, 22, 0.9);
+    --text-link: rgba(248, 68, 68, 0.592);
+    --search-popout-option-fade: transparent;
+    --search-popout-option-fade-hover: #11111100;
+    --scrollbar-auto-thumb: var(--background-accent);
+    --scrollbar-thin-thumb: var(--background-accent);
+    --scrollbar-auto-track: transparent;
+    --legacy-elevation-border: 0 0 0 2px hsl(10 calc(1 * 30%) 25% / 1);
+	--elevation-medium: 0 0 0 2px hsl(10 calc(1 * 30%) 25% / 1);
+	--elevation-high: 0 0 0 2px hsl(10 calc(1 * 30%) 25% / 1);
+    --brand-experiment: rgba(130, 22, 22, 0.445);
+    --brand-15a: rgba(130, 22, 22, 0.9);
+    --brand-260: var(--background-primary);
+    --brand-360: rgba(130, 22, 22, 0.9);
+    --brand-400: rgba(130, 22, 22, 0.9);
+    --brand-500: rgba(130, 22, 22, 0.9);
+    --brand-530: rgba(130, 22, 22, 0.9);
+    --brand-560: rgba(130, 22, 22, 0.445);
+    --brand-600: rgba(130, 22, 22, 0.9);
+    --brand-experiment-15a: rgba(130, 22, 22, 0.9);
+    --red-400: rgba(130, 22, 22, 0.9);
+    --background-primary: hsl(10 calc(1 * 25%) 8% / 1);
+    --background-secondary: hsl(10 calc(1 * 25%) 8% / 1);
+    --background-secondary-alt: hsl(10 calc(1 * 25%) 8% / 1);
+    --background-tertiary: hsl(10 calc(1 * 25%) 8% / 1);
+    --background-floating: hsl(10 calc(1 * 25%) 8% / 1);
+    --bg-overlay-3: transparent;
+    --bg-surface-overlay: var(--background-secondary);
+    --autocomplete-bg: var(--background-primary);
+    --modal-background: hsl(10 calc(1 * 25%) 8% / 1);
+	--font-primary: Mooli;
+	--home-background: transparent;
+	--bg-overlay-chat: transparent;
+}
+body {
+    background-image: url(https://files.catbox.moe/mtrrag.png);
+    background-size: cover;
+    text-rendering: optimizeSpeed;
     opacity: 0.85;
 }
-body{
-    background-image: url(https://w.wallhaven.cc/full/2y/wallhaven-2ymww9.png);
-    background-size: cover;
-    background-attachment: fixed;
+*, *::after, *::before {
+  animation: none!important;
+  transition: none!important;
 }
-.theme-dark{
-    --background-accent: rgb(113, 97, 155);
-    --background-primary: var(--bg-surface-overlay);
-    --background-secondary: var(--bg-surface-overlay);
-    --background-secondary-alt: var(--bg-surface-overlay);
-    --background-floating: var(--bg-surface-overlay);
-    --background-tertiary: var(--bg-surface-overlay);
-    --bg-base-primary: var(--bg-surface-overlay);
-    --home-background: none;
-    --background-mentioned: rgba(139, 97, 155, 0.247);
-    --background-mentioned-hover: rgba(139, 97, 155, 0.247);
-    --background-message-highlight: rgba(139, 97, 155, 0.247);
-    --button-secondary-background: var(--brand-500);
-    --button-secondary-background-hover: var(--brand-560);
-    --button-secondary-background-active: var(--brand-600);
-    --badge-brand-text:rgb(155, 97, 150);
-    --info-warning-foreground: var(--brand-500);
-    --shadow-high: 0 0 2px black;
-    --header-primary: rgb(155, 97, 150);
-    --interactive-active: rgb(155, 97, 150);
-    --text-brand: rgb(145, 97, 155);
-    --text-link: rgb(220, 151, 226);
-    --text-muted: rgb(153, 97, 155);
-    --status-danger: rgb(194, 105, 194);
-    --menu-item-default-active-bg: var(--background-modifier-selected);
-    --menu-item-default-hover-bg: var(--background-modifier-hover);
-    --mention-foreground: var(--text-normal);
-    --mention-background: var(--brand-15a);
-    --brand-260: white;
-    --brand-400: rgb(176, 105, 194);
-    --brand-15a: rgba(179, 105, 194, 0.43);
-    --brand-500: rgb(143, 97, 155);
-    --brand-560: rgba(194, 105, 172, 0.43);
-    --brand-600: rgb(201, 113, 204);
+/*base window*/
+[class^="base"]>[class^="content"]>[class^="chat"],
+[class^="standardSidebarView"]>[class^="contentRegion"],
+[class^="content"]>[class^="container"][aria-label],
+[class^="content"]>[class^="pageWrapper"],
+[class^="applicationStore"],
+[class^="base"]>[class^="content"]>[class^="shop"],
+[class^="content"]>[class^="outerContainer"]{
+	border-left: 2px solid rgba(130, 22, 22, 0.445);
+    border-top: 2px solid rgba(130, 22, 22, 0.445);
+    border-top-right-radius: 0;
+    border-top-left-radius: 8px;
 }
-::-webkit-scrollbar-thumb{
-    background-color: rgba(128, 128, 128, 0.247)!important;
+/*horizontal server list*/
+[class^="container"]>[class^="base"]{
+    margin-top: 70px;
 }
-/*win buttons*/
-div[class^="typeWindows_"][class*="withFrame_"]{
-    height: 30px!important;
-    margin-top: 0;
+[class*="guilds"] {
+    background-color: hsl(10 calc(1 * 25%) 2% / 1)!important;
+    height: 100vw;
+    position: absolute;
+    margin-top: 70px;
+    transform: rotate(-90deg);
+    transform-origin: top left;
 }
-div[class^="winButton"]{
-    padding: 10px;
+[class^="blobContainer"]>[class^="wrapper"],
+[class^="listItemWrapper"]>[class^="wrapper"],
+[class^="folderIconWrapper"]{
+    transform: rotate(90deg)
+}
+[class^="tooltip"][class*="listItemTooltip"]{
+    margin-top: 5px;
 }
 /*popoup fix*/
-div[class^="recentMentionsPopout_"],
-div[class^="messagesPopoutWrap_"]{
+[class^="recentMentionsPopout"],
+[class^="messagesPopoutWrap"]{
 	max-height: 80vh!important;
 }
+/*wide sidebar*/
+[class^="sidebar"],
+[class^="bannerImg"],
+[class^="bannerImage"]{
+	width: 320px;
+}
+[class^="privateChannels"]>[class^="scroller"]>[class^="content"]>[class^="channel"],
+[class^="privateChannels"]>[class^="scroller"]>[class^="content"]>[class^="friendsButtonContainer"]>[class^="channel"]{
+    max-width: 320px;
+}
+[class^="panels"]>[class^="container"]>[class^="flex"]{
+    margin-left: calc(20% + 10px);
+}
+[class^="panels"]{
+    margin: 8px 8px 22px 8px;
+    background: hsl(10 calc(1 * 25%) 2% / 1);
+}
+[class^="panels"]>[class^="container"]{
+    background: hsl(10 calc(1 * 25%) 2% / 1);
+    border: 2px dashed rgba(130, 22, 22, 0.445);
+    border-radius: 8px;
+}
+[class^="panels"]>[class^="wrapper"]>[class^="container"],
+[class^="panels"]>[class*="activityPanel"]{
+    background: hsl(10 calc(1 * 25%) 2% / 1);
+    border: 2px dashed rgba(130, 22, 22, 0.445);
+    border-radius: 8px;
+    margin-bottom: 8px;
+}
+[class^="channelTextArea"]{
+    border: 2px solid rgba(130, 22, 22, 0.445);
+}
+[class^="channelTextArea"]>[class^="attachedBars"]{
+    background: transparent;
+}
+/*sidebar background fix*/
+[class^="sidebar"]{
+    background: hsl(10 calc(1 * 25%) 2% / 1);
+}
+/*sidebar profle account*/
+[class^="accountProfilePopoutWrapper"]{
+    left: 0;
+}
+/* winbuttons*/
+[class^="winButton"]{
+    width: 30px;
+    height: 40px;
+    margin-right: 13px;
+    margin-top: 35px;
+}
+/* divider*/
+[class^="divider"]{
+    border-top: dashed 2px var(--background-modifier-accent);
+}
+[class^="divider"]>[class^="content"]{
+    color: var(--text-link);
+    background: var(--background-floating);
+}
+[class^="tooltipPointer"]{
+    display: none;
+}
+/*missing box shadow popup*/
+[class^="popoutContainer"],[class^="quickswitcher"]{
+    box-shadow: var(--elevation-medium);
+}
+/*submenu spacing*/
+[class^="submenuPaddingContainer"]{
+	padding-left: 10px;
+}
 /*unread balls*/
-[class^="containerDefault_"]>[class^="iconVisibility_"]>[class^="unread_"]{
+[class^="containerDefault"]>[class^="iconVisibility"]>[class^="unread"]{
     position: absolute;
     height: 23px;
     width: 23px;
     border-radius: 50%;
     top: 9px;
     left: 7px;
-    background: linear-gradient(0deg,#616161,#686767 36%,#616161 42%,#868686 70%);
+    background: linear-gradient(0deg,#c55252,#753939 36%,#6c2626fd 42%,#9c4040 70%);
     z-index: 1;
 }
-div[class^="replyBar_"]{
-    background: var(--brand-500);
+/*scroll fix*/
+[class^="scrollableContainer"]::-webkit-scrollbar-thumb {
+    background: transparent;
 }
-/*activity memberlist*/
-div[data-list-item-id^="members-"]>div[class^="container_"],
-h3[class^="membersGroup_"]:has([class^="headerContainer"]){
-    display: none;
+
+[data-list-id="guildsnav"]>[class^="footer"]{
+    margin-bottom: 150px;
+    background: hsl(130 calc(1 * 25%) 2% / 1);
 }
