@@ -112,9 +112,9 @@ body {
 }
 /*wide sidebar*/
 [class^="sidebar"],
-[class^="bannerImg"],
-[class^="bannerImage"]{
-	width: 320px;
+[class^="animatedContainer"]>[class^="bannerImage"],
+[class^="animatedContainer"]>[class^="bannerImage"]>[class^="bannerImg"]{
+	width: 320px!important;
 }
 [class^="privateChannels"]>[class^="scroller"]>[class^="content"]>[class^="channel"],
 [class^="privateChannels"]>[class^="scroller"]>[class^="content"]>[class^="friendsButtonContainer"]>[class^="channel"]{
@@ -195,7 +195,6 @@ body {
 [class^="scrollableContainer"]::-webkit-scrollbar-thumb {
     background: transparent;
 }
-
 [data-list-id="guildsnav"]>[class^="itemsContainer"]>[class^="footer"]{
     background: hsl(10 calc(1 * 25%) 2% / 1);
 }
