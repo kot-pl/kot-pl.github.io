@@ -195,7 +195,6 @@ body {
     background: transparent;
 }
 
-[data-list-id="guildsnav"]>[class^="footer"]{
-    margin-bottom: 150px;
-    background: hsl(130 calc(1 * 25%) 2% / 1);
+[data-list-id="guildsnav"]>[class^="itemsContainer"]>[class^="footer"]{
+    background: hsl(10 calc(1 * 25%) 2% / 1);
 }
