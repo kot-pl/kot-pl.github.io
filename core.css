@@ -60,6 +60,7 @@
 	--font-primary: Mooli;
 	--home-background: transparent;
 	--bg-overlay-chat: transparent;
+    --background-nested-floating: var(--background-primary);
 }
 body {
     background-image: url(https://files.catbox.moe/mtrrag.png);
