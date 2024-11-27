@@ -10,6 +10,7 @@
 :root,.theme-dark{
     --bg-mod-subtle: var(--background-accent);
     --bg-mod-faint: var(--background-primary);
+    --bg-base-secondary: var(--background-primary);
     --home-card-resting-border: rgba(130, 22, 22, 0.445);
     --background-accent: rgba(130, 22, 22, 0.445);
     --background-mentioned: rgba(130, 22, 22, 0.445);
@@ -24,7 +25,7 @@
     --button-secondary-background-hover: rgba(130, 22, 22, 0.445);
     --button-secondary-background-active: rgba(130, 22, 22, 0.9);
     --mention-foreground: white;
-    --mention-background: rgba(130, 22, 22, 0.9);
+    --mention-background: rgb(255, 86, 86);
     --modal-footer-background: hsl(10 calc(1 * 25%) 8% / 1);
     --input-background: rgba(130, 22, 22, 0.445);
     --info-warning-foreground: rgba(130, 22, 22, 0.9);
@@ -37,6 +38,8 @@
     --legacy-elevation-border: 0 0 0 2px hsl(10 calc(1 * 30%) 25% / 1);
 	--elevation-medium: 0 0 0 2px hsl(10 calc(1 * 30%) 25% / 1);
 	--elevation-high: 0 0 0 2px hsl(10 calc(1 * 30%) 25% / 1);
+    --shadow-low: 0 0 0 2px hsl(10 calc(1 * 30%) 25% / 1);
+    --shadow-high: 0 0 0 2px hsl(10 calc(1 * 30%) 25% / 1);
     --brand-experiment: rgba(130, 22, 22, 0.445);
     --brand-15a: rgba(130, 22, 22, 0.9);
     --brand-260: var(--background-primary);
@@ -67,10 +70,6 @@ body {
     background-size: cover;
     text-rendering: optimizeSpeed;
     opacity: 0.85;
-}
-*, *::after, *::before {
-  animation: none!important;
-  transition: none!important;
 }
 /*base window*/
 [class^="base"]>[class^="content"]>[class^="chat"],
