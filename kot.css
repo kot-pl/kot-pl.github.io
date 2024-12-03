@@ -34,7 +34,7 @@ body{
     --brand-600: rgba(69, 187, 255, 0.4);
     --app-color:rgba(0, 0, 0, 0.5);
     --app-blur:blur(0px);
-    --app-bg: url(https://w.wallhaven.cc/full/d6/wallhaven-d6jx53.jpg);
+    --app-bg: url(https://files.catbox.moe/ye2ojg.jpg);
 }
 .theme-dark{
     --status-danger: rgba(69, 218, 255, 0.4);
