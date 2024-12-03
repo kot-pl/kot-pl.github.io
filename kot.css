@@ -32,7 +32,7 @@ body{
     --brand-500: rgba(69, 187, 255, 0.4);
     --brand-560: rgba(69, 187, 255, 0.2);
     --brand-600: rgba(69, 187, 255, 0.4);
-    --app-color:rgba(0, 0, 0, 0.5);
+    --app-color:rgba(37, 37, 37, 0.5);
     --app-blur:blur(0px);
     --app-bg: url(https://files.catbox.moe/ye2ojg.jpg);
 }
@@ -46,7 +46,8 @@ body{
 [class^="focusLock_"]>:nth-child(n + 1),
 [role="menu"],
 [class*="tooltipPrimary_"],
-[class^="buttons_"]>[class^="buttonsInner_"]{
+[class^="buttons_"]>[class^="buttonsInner_"],
+[class^="positionContainer_"]>[class^="drawerSizingWrapper_"]>[class^="contentWrapper_"]{
     background: rgba(0, 0, 0, 0.8);
     border-radius: 8px;
 }
@@ -54,7 +55,11 @@ body{
 [class^="channelHeader_"],
 [class^="header_"],
 [class^="messageContainer_"],
-[class^="messages_"]{
+[class^="messages_"],
+[class^="emojiPicker_"],
+[class^="categorySection_"]>[class^="wrapper_"],
+[id="emoji-picker-tab-panel"]>[class^="wrapper_"],
+[class^="inspector_"]{
     background: transparent;
 }
 /*unread balls*/
