@@ -12,7 +12,7 @@ body{
     background-size: cover;
 }
 #app-mount{
-    background-color:var(--app-color)!important;
+    background:var(--app-color)!important;
     backdrop-filter: var(--app-blur);
 }
 :root{
@@ -32,7 +32,7 @@ body{
     --brand-500: rgba(69, 187, 255, 0.4);
     --brand-560: rgba(69, 187, 255, 0.2);
     --brand-600: rgba(69, 187, 255, 0.4);
-    --app-color:rgba(37, 37, 37, 0.5);
+    --app-color: linear-gradient(to top,#00000071, #302f2f94);
     --app-blur:blur(0px);
     --app-bg: url(https://files.catbox.moe/ye2ojg.jpg);
 }
