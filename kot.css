@@ -1,0 +1,98 @@
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@100;300;400;500;700&display=swap');
+::placeholder, body, button, input, select, textarea {
+font-family: 'Comfortaa' ;
+}
+* {
+    transition: none .1s ease!important;
+}
+body{
+    background:var(--app-bg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+#app-mount{
+    background-color:var(--app-color)!important;
+    backdrop-filter: var(--app-blur);
+}
+:root{
+    --header-primary: rgba(69, 187, 255, 0.4);
+    --header-secondary: rgb(136, 194, 212);
+    --bg-base-primary: transparent;
+    --background-primary: transparent;
+    --background-secondary-alt: transparent;
+    --background-tertiary: transparent;
+    --background-secondary: transparent;
+    --channeltextarea-background: rgba(0, 0, 0, 0.8);
+    --home-background: transparent;
+    --modal-footer-background: transparent;
+    --scrollbar-auto-thumb: rgba(69, 187, 255, 0.4);
+    --scrollbar-thin-thumb: rgba(69, 187, 255, 0.4);
+    --scrollbar-auto-track: transparent;
+    --brand-500: rgba(69, 187, 255, 0.4);
+    --brand-560: rgba(69, 187, 255, 0.2);
+    --brand-600: rgba(69, 187, 255, 0.4);
+    --app-color:rgba(0, 0, 0, 0.5);
+    --app-blur:blur(0px);
+    --app-bg: url(https://w.wallhaven.cc/full/d6/wallhaven-d6jx53.jpg);
+}
+.theme-dark{
+    --status-danger: rgba(69, 218, 255, 0.4);
+    --control-brand-foreground: rgba(69, 187, 255, 0.4);
+    --__header-bar-background: transparent;
+    --background-floating: transparent;
+}
+[id^="popout_"]>div>:nth-child(n + 1):not([class^="submenuPaddingContainer_"]),
+[class^="focusLock_"]>:nth-child(n + 1),
+[role="menu"],
+[class*="tooltipPrimary_"],
+[class^="buttons_"]>[class^="buttonsInner_"]{
+    background: rgba(0, 0, 0, 0.8);
+    border-radius: 8px;
+}
+[class^="footer_"],
+[class^="channelHeader_"],
+[class^="header_"],
+[class^="messageContainer_"],
+[class^="messages_"]{
+    background: transparent;
+}
+/*unread balls*/
+[class^="containerDefault"]>[class^="iconVisibility"]>[class^="unread"]{
+    position: absolute;
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 14px;
+    left: 8px;
+    background: radial-gradient(#45e3ff71, #1f1f1f);
+    z-index: 1;
+}
+[data-list-item-id^="channels"]>[class^="linkTop"]>[class^="iconContainer"]>[class^="icon"]{
+    height: 15px;
+    width: 15px;
+    border-radius: 50%;
+    top: 14px;
+    left: 5px;
+    background-color: rgb(58, 57, 57);
+}
+[data-list-item-id^="channels"]>[class^="linkTop"]>[class^="iconContainer"]>[class^="icon_"]>[d^="M"]{
+    display: none;
+}
+/*poof*/
+[aria-label="Open GIF picker"],
+[aria-label="Send a gift"],
+[aria-label="Open sticker picker"],
+[aria-label="Bookmarks"],
+[id="message-save-for-later-upsell"],
+[class^="channelAppLauncher"],
+[aria-label="Forward"],
+[id="message-forward"],
+[aria-label="Help"],
+[class^="hoverBarButton"]:has([class*="emoji"]),
+[class^="buttonsInner"]>[class^="separator"],
+[class^="menu"]>[class^="scroller"]>[class^="separator"],
+[class^="membersGroup_"]:has([class^="headerContainer_"]),
+[data-list-item-id^="members-"]>[class^="container_"]{
+    display: none;
+}
