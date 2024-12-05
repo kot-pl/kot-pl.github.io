@@ -106,7 +106,7 @@
     border-radius: 50%;
     top: 14px;
     left: 8px;
-    background: radial-gradient(#d6407a, #931c40);
+    background: radial-gradient(#ff2f7f, #000000);
     z-index: 1;
 }
 [data-list-item-id^="channels"]>[class^="linkTop"]>[class^="iconContainer"]>[class^="icon"]{
