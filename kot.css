@@ -76,10 +76,9 @@
 [class^="sidebar_"]{
     border-radius: 0!important;
 }
-[class^="message_"][class*="mentioned_"],
-[class^="message_"][class*="replying_"]{
+[id^="chat-messages-"]>[class*="mentioned_"],
+[id^="chat-messages-"]>[class*="replying_"]{
     background: #931c40;
-    max-width: max-content;
     margin-left: 20px;
     border-radius: 20px;
 }
