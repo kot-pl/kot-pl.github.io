@@ -16,6 +16,7 @@
     --scrollbar-thin-thumb: #931c40;
     --status-danger: #931c40;
     --mention-background: #931c40;
+    --brand-15a: #931c40;
     --brand-260: #931c40;
     --brand-400: #931c40;
     --brand-500: #931c40;
@@ -97,27 +98,14 @@
     background: #17171c;
     padding: 10px;
 }
-/*unread balls*/
-[class^="containerDefault"]>[class^="iconVisibility"]>[class^="unread"]{
-    position: absolute;
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    top: 14px;
-    left: 8px;
-    background: radial-gradient(#ff2f7f, #000000);
-    z-index: 1;
-}
-[data-list-item-id^="channels"]>[class^="linkTop"]>[class^="iconContainer"]>[class^="icon"]{
-    height: 15px;
-    width: 15px;
-    border-radius: 50%;
-    top: 14px;
-    left: 5px;
-    background-color: rgb(46, 45, 45);
-}
-[data-list-item-id^="channels"]>[class^="linkTop"]>[class^="iconContainer"]>[class^="icon_"]>[d^="M"]{
-    display: none;
+/*unreadbar*/
+[class^="unread"][class*="unreadImportant"]{
+    height: 30px;
+    width: 2px;
+    top: 2px;
+    left: 0;
+    margin-top: 0px;
+	background: #931c40;
 }
 /*name color fix*/
 [class^="username"]{ 
@@ -152,10 +140,14 @@
     border-radius: 30px;
 }
 [class*="botTagOP_"],
-[class^="newBadge_"]{
+[class^="newBadge_"],
+[class^="titleBadge_"]{
     color: white!important;
 }
 [class^="control_"]>[class^="container_"],
 [class^="bar_"]>[class^="barFill_"]{
     background: #931c40!important;
+}
+[class^="headerBar_"]>[class^="searchBar_"]{
+    margin-right: 150px!important;
 }
