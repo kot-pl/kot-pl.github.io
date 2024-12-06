@@ -80,8 +80,8 @@
 }
 [id^="chat-messages-"]>[class*="mentioned_"],
 [id^="chat-messages-"]>[class*="replying_"]{
-    background: #931c40;
     margin-left: 20px;
+    background: #931c40;
     border-radius: 20px;
 }
 [class^="newMessagesBar_"],
@@ -113,32 +113,23 @@
 	filter: contrast(.3) brightness(1.2) saturate(300%);
 }
 /*radial memberlist*/
-[class^="memberInner_"]:has([mask="url(#svg-mask-status-online)"],[fill="#23a55a"])::before{
-    position: absolute;
-    content: "";
-    margin-left: -3px;
-    width: 38px;
-    height: 38px;
-    background: rgba(8, 156, 70, 0.61);
-    border-radius: 30px;
+[class^="memberInner_"]:has([mask="url(#svg-mask-status-online)"],[fill="#23a55a"]){
+    background: linear-gradient(to left, rgba(138, 199, 40, 0),rgba(46, 160, 46, 0.2));
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
 }
-[class^="memberInner_"]:has([mask="url(#svg-mask-status-dnd)"])::before{
-    position: absolute;
-    content: "";
-    margin-left: -3px;
-    width: 38px;
-    height: 38px;
-    background: rgba(242, 63, 66, 0.541);
-    border-radius: 30px;
+[class^="memberInner_"]:has([mask="url(#svg-mask-status-dnd)"]){
+    background: linear-gradient(to left, rgba(138, 199, 40, 0),rgba(160, 46, 46, 0.2));
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
 }
-[class^="memberInner_"]:has([mask="url(#svg-mask-status-idle)"])::before{
-    position: absolute;
-    content: "";
-    margin-left: -3px;
-    width: 38px;
-    height: 38px;
-    background: rgba(240, 211, 50, 0.658);
-    border-radius: 30px;
+[class^="memberInner_"]:has([mask="url(#svg-mask-status-idle)"]){
+    background: linear-gradient(to left, rgba(138, 199, 40, 0),rgba(160, 139, 46, 0.2));
+    background-size: cover;
+    background-repeat: no-repeat;
+    border-radius: 20px;
 }
 [class*="botTagOP_"],
 [class^="newBadge_"],
