@@ -81,7 +81,7 @@
 [id^="chat-messages-"]>[class*="mentioned_"],
 [id^="chat-messages-"]>[class*="replying_"]{
     margin-left: 20px;
-    background: #931c40;
+    background: linear-gradient(to left, rgba(138, 199, 40, 0),rgba(160, 46, 116, 0.2));
     border-radius: 20px;
 }
 [class^="newMessagesBar_"],
