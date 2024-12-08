@@ -1,4 +1,3 @@
-@import "https://fonts.googleapis.com/css2?family=Mooli&display=swap";
 .theme-dark{
     --background-primary: #100f15;
     --background-secondary: #17171c;
@@ -34,11 +33,10 @@
     --background-modifier-accent: transparent;
     --control-brand-foreground: #931c40;
     --background-accent: #931c40;
-    --background-modifier-active: #931c40;
-    --background-modifier-hover: #931c4098;
-    --background-modifier-selected: #931c40;
+    --background-modifier-active: linear-gradient(to left, rgba(138, 199, 40, 0),rgba(160, 46, 80, 0.6));
+    --background-modifier-hover: linear-gradient(to left, rgba(138, 199, 40, 0),rgba(160, 46, 80, 0.2));
+    --background-modifier-selected: linear-gradient(to left, rgba(138, 199, 40, 0),rgba(160, 46, 80, 0.6));
     --menu-item-default-active-bg: #931c4098;
-    --font-primary: Mooli;
 }
 [class*="withFrame_"]{
     height: 0;
