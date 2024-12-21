@@ -145,7 +145,6 @@ div[class^="control_"]>div[class^="container_"],
 div[class^="bar_"]>div[class^="barFill_"]{
     background: #931c40!important;
 }
-div[class^="headerBar_"]>div[class^="searchBar_"],
-div[class^="closeButton_"]{
+div[class^="headerBar_"]>div[class^="searchBar_"]{
     margin-right: 150px!important;
 }
