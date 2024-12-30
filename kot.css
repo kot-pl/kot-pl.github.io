@@ -17,6 +17,7 @@
     --modal-background: #17171c;
     --card-secondary-bg: #17171c;
     --bg-mod-faint: #17171c;
+    --bg-mod-strong: #85103362;
     --text-link: #e04d79;
     --text-positive:#e04d79; 
     --scrollbar-auto-thumb: #931c40;
@@ -72,8 +73,8 @@
 [class^="chatIcon_"]{
     margin-right: 140px;
 }
-[data-list-item-id^="chat-messages"]>[class^="contents_"],
-[data-list-item-id^="chat-messages"]>[id^="message-accessories-"]{
+[id^="chat-messages"]>[class^="message_"]>[class^="contents_"],
+[id^="chat-messages"]>[class^="message_"]>[id^="message-accessories-"]{
     background: #17171c;
     border-radius: 8px;
     width: fit-content;
