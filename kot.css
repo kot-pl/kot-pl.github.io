@@ -46,6 +46,7 @@
     --background-modifier-hover: rgba(160, 46, 80, 0.2);
     --background-modifier-selected: rgba(160, 46, 80, 0.6);
     --menu-item-default-active-bg: #931c4098;
+    --primary-560: #931c40;
 }
 [class*="withFrame_"]{
     height: 0;
