@@ -17,7 +17,6 @@
     --scrollbar-thin-thumb: transparent;
 }
 body{
-    font-family: "tahoma";
     text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
     background: rgba(4, 16, 32, 0.8) url("http://i.imgur.com/SUMjQsA.jpg") top center no-repeat;
     background-size: cover;
