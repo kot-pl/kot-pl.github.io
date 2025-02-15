@@ -17,15 +17,8 @@
     --scrollbar-thin-thumb: transparent;
 }
 body{
-    text-shadow: 1px 1px 1px rgba(0, 0, 0, 0.75);
     background: rgba(4, 16, 32, 0.8) url("http://i.imgur.com/SUMjQsA.jpg") top center no-repeat;
     background-size: cover;
-}
-:not(#a#b#c),
-:not(#a#b#c):after,
-:not(#a#b#c):before{
-    animation:none !important;
-    transition:none !important;
 }
 .bg__960e4{
     border-radius: 5px;
