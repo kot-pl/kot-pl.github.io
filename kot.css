@@ -126,19 +126,19 @@ div[class^="sidebar_"]{
 	filter: contrast(.3) brightness(1.2) saturate(300%);
 }
 /*radial memberlist*/
-[class^="memberInner_"]:has([fill="#23a55a"],[mask="url(#svg-mask-status-online)"]){
+[class^="childContainer_"]:has([fill="#23a55a"],[mask="url(#svg-mask-status-online)"]){
     background: linear-gradient(to left, rgba(138, 199, 40, 0),rgba(46, 160, 46, 0.2));
     border-radius: 20px;
 }
-[class^="memberInner_"]:has([fill="#f23f43"],[mask="url(#svg-mask-status-dnd)"]){
+[class^="childContainer_"]:has([fill="#f23f43"],[mask="url(#svg-mask-status-dnd)"]){
     background: linear-gradient(to left, rgba(138, 199, 40, 0),rgba(160, 46, 46, 0.2));
     border-radius: 20px;
 }
-[class^="memberInner_"]:has([fill="#593695"],[mask="url(#svg-mask-status-streaming)"]){
+[class^="childContainer_"]:has([fill="#593695"],[mask="url(#svg-mask-status-streaming)"]){
     background: linear-gradient(to left, rgba(138, 199, 40, 0),rgba(147, 46, 160, 0.2));
     border-radius: 20px;
 }
-[class^="memberInner_"]:has([fill="#f0b232"],[mask="url(#svg-mask-status-idle)"]){
+[class^="childContainer_"]:has([fill="#f0b232"],[mask="url(#svg-mask-status-idle)"]){
     background: linear-gradient(to left, rgba(138, 199, 40, 0),rgba(160, 139, 46, 0.2));
     border-radius: 20px;
 }
