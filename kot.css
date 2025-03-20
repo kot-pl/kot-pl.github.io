@@ -165,3 +165,8 @@ div[class^="sidebar_"]{
     font-size: 14px;
     margin-bottom: 5px;
 }
+/*test*/
+[data-list-id="chat-messages"] > [class^=wrapper_],
+[data-list-id="chat-messages"] > [class^=wrapper_] > [class^=wrapper_]{
+	background: unset; 
+}
