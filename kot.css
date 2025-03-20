@@ -170,3 +170,7 @@ div[class^="sidebar_"]{
 [data-list-id="chat-messages"] > [class^=wrapper_] > [class^=wrapper_]{
 	background: unset; 
 }
+
+[class^="timestamp_"]>[aria-label^="Today"]::before{
+    content: "Today at ";
+}
