@@ -6,66 +6,123 @@
 * @invite 0
 * @source kot-pl.github.io
 */
-@import "https://fonts.googleapis.com/css2?family=Mooli&display=swap";
-body{
-    background-color: #0d1117;
-    font-family: 'Mooli', monospace;
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@100;300;400;500;700&display=swap');
+::placeholder, body, button, input, select, textarea {
+font-family: 'Comfortaa' ;
 }
-.theme-dark{
-    --primary-600: transparent;
-    --primary-630: transparent;
-    --primary-660: transparent;
-    --primary-700: transparent;
-    --primary-800: transparent;
-    --background-nested-floating: #0d1117;
-    --channeltextarea-background:#0d1117;
-    --home-background: transparent;
-    --text-brand: #4586a0;
-    --text-link: #4586a0;
-    --text-normal: #c9d1d9;
-    --text-muted: #a1a1a1;
-    --text-positive: #6896a8;
-    --status-positive: #6896a8;
-    --status-danger: #4586a0;
-    --scrollbar-auto-thumb: #4586a0;
-    --scrollbar-thin-thumb: #4586a0;
-    --interactive-normal: #a1a1a1;
-    --interactive-hover: #4586a0;
-    --interactive-active: #4586a0;
-    --interactive-muted: #6b6b6b;
-    --input-background: #0d1117;
-    --menu-item-default-active-bg: var(--background-modifier-selected);
-    --menu-item-default-hover-bg: var(--background-modifier-hover);
-    --legacy-elevation-high: transparent;
-    --legacy-elevation-border: transparent;
+.visual-refresh body{
+    background-image: url(https://w.wallhaven.cc/full/5w/wallhaven-5wxj21.jpg);
+    background-size: cover;
+    background-attachment: fixed;
 }
-div[class^="base_"]>div[class^="content_"]>:nth-child(2),[class^="contentRegion_"]{
-    background-image: linear-gradient(#181818bd,#181818bd),url(https://w.wallhaven.cc/full/5g/wallhaven-5g99o3.png);
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 8px;
-    overflow: hidden;
+.visual-refresh.theme-dark, .visual-refresh .theme-dark {
+    --bg-mod-faint: var(--color1);
+    --background-mod-faint: var(--color1);
+    --bg-mod-subtle: var(--color1);
+    --background-mod-subtle: transparent;
+    --bg-mod-normal: yellow;
+    --background-mod-normal: var(--color1);
+    --bg-mod-strong: var(--bgcolor);
+    --background-mod-strong: var(--color1);
+    --background-primary: transparent;
+    --bg-base-primary: blue;
+    --background-base-low: transparent;
+    --background-secondary: transparent;
+    --bg-base-secondary: transparent;
+    --background-base-lower: transparent;
+    --background-tertiary: var(--bgcolor);
+    --bg-base-tertiary: transparent;
+    --background-base-lowest: transparent;
+    --background-surface-highest: var(--color1);
+    --background-floating: var(--popupcolors);
+    --bg-surface-raised: var(--popupcolors);
+    --background-surface-higher: var(--popupcolors);
+    --background-surface-high: var(--popupcolors);
+    --chat-background-default: var(--chatbackground);
+    --modal-background: var(--popupcolors);
+    --autocomplete-bg: var(--popupcolors);
+    --modal-footer-background: transparent;
+    --scrollbar-auto-thumb: var(--color1);
+    --scrollbar-thin-thumb: var(--color1);
+    --bg-brand: var(--color1);
+    --text-brand: white;
+    --text-normal: rgba(255, 255, 255, 0.8);
+    --text-link: var(--linkcolor);
+    --mention-background: var(--color1);
+    --brand-500: var(--color2);
+    --button-filled-brand-background-hover: var(--color1);
+    --button-filled-brand-background-active: var(--color1);
+    --checkbox-background-checked: var(--color1);
+    --checkbox-border-checked: var(--color1);
+    --message-reacted-background: var(--color1);
+    --brand-260: var(--color1);
+    --brand-400: var(--color1);
+    --brand-560: white;
+    --opacity-blurple-16: var(--color2);
+    --blurple-50: var(--color1);
+    --mention-foreground: white;
+    --bg-overlay-selected: var(--color1);
 }
-div[class^="hoverBarButton_"]:has([class^="emoji"]),
-div[class^="buttonsInner_"]>[class^="separator_"],
-h3[class^="membersGroup_"]:has([class^="headerContainer_"]),
-div[data-list-item-id^="members-"]>[class^="container_"],
-div[class^="channelAppLauncher_"],
-[id="message-save-for-later-upsell"],
-[id="message-actions-save-for-later-upsell"],
-div[class^="toolbar_"]>div[class^="iconWrapper_"]:has([d^="M4 5a3 3 0 0 1"]){
+:root{
+    --color1: rgba(143, 63, 110, 0.493);
+    --color2: rgba(93, 70, 104, 0.986);
+    --linkcolor: rgb(161, 141, 173);
+    --bgcolor: rgba(37, 29, 29, 0.603);
+    --chatbackground: rgba(165, 42, 69, 0);
+    --popupcolors: rgba(0, 0, 0, 0.7);
+}
+.visual-refresh [class^="panels_"]{
+    width: calc(100% - var(--space-xs)* 10);
+    border-radius: 0;
+    border: none;
+    margin-left: 70px;
+    bottom: 5px;
+}
+.visual-refresh [class^="channelTextArea_"],
+.visual-refresh [class^="channelTextArea_"]:focus-within{
+    margin-bottom: 5px;
+    border: none;
+    background: none;
+}
+[class^="typing_"]{
+    width: fit-content;
+    margin-left: auto;
+    top: -25px;
+}
+.visual-refresh [class^="newMessagesBar_"],
+.visual-refresh [class^="stackedBars_"],
+.visual-refresh [class^="newTopicsBarContainer_"],
+.visual-refresh [class^="topicsPillContainer_"],
+.visual-refresh [class^="chatHeaderBar_"]{
+    background-color: var(--color1);
+}
+.visual-refresh [class^="listItem_"]{
+    transform: scale(1.2);
+    padding: 4px;
+}
+[data-list-item-id^="guildsnav_"]>[class^="icon_"],
+[class^="closedFolderIconWrapper_"]>[class^="icon_"]{
+    border-radius: 50%!important;
+}
+.visual-refresh [class^="stack_"]{
+    height: auto!important;
+}
+.visual-refresh [class^="sidebar_"]>[class^="wrapper_"]{
+    margin-bottom: 0;
+}
+[class^="listItem_"]>[class^="pill_"]{
+    left: 7px;
+}
+.visual-refresh [class^="unreadMentions"]{
     display: none;
 }
-.menu_d90b3d,.root_f9a4c9:not(.modal_a60b1b),.tooltipPrimary_b6c360,.container_e664f3,.messagesPopoutWrap_ac90a2,.container_eedf95,.container_f1c3d9,.container_f8a938,.contentWrapper_af5dbb,.animatorRight_f88ae3>.wrapper_c6ee36,.animatorLeft_f88ae3>.wrapper_c6ee36,.autocomplete_bcc24e,.userPopoutOuter_c69a7b,.popout_c5b389,.debugPanelStandalone_feab95,.noiseCancellationPopout_adcaac,.popout_f6639d,.container_c22357,.bar_eba0ba,.container_e88961,.reactionTooltip_fba897{
-    background: #0d1117;
-    border: 2px solid rgba(255, 255, 255, 0.3);
-    border-radius: 8px;
-}
-.attachedBars_d0696b{
-    background: hsl(var(--brand-500-hsl) / 0.5);
-}
-.floating_d1c246{
-    background: #0d1117;
-}
-.callContainer_d880dc{
+.visual-refresh [class^="panels_"]>[class^="panel_"]{
     background: transparent;
+}
+.visual-refresh [class^="sidebarList_"]{
+    backdrop-filter: none;
+    width: 260px;
+}
+[class^="member_"]>[class^="childContainer_"]{
+    padding: 0;
 }
