@@ -93,7 +93,8 @@ font-family: 'Comfortaa' ;
 .visual-refresh [class^="stackedBars_"],
 .visual-refresh [class^="newTopicsBarContainer_"],
 .visual-refresh [class^="topicsPillContainer_"],
-.visual-refresh [class^="chatHeaderBar_"]{
+.visual-refresh [class^="chatHeaderBar_"],
+:where(.visual-refresh) [class^="option_"]:hover{
     background-color: var(--color1);
 }
 .visual-refresh [class^="listItem_"]{
