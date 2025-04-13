@@ -1,0 +1,91 @@
+/**
+* @name kot simple1
+* @version 1
+* @description test1
+* @author kot-pl
+* @invite 0
+* @source kot-pl.github.io
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.visual-refresh body{
+    background: url(https://w.wallhaven.cc/full/lq/wallhaven-lqrlyl.jpg)center/cover;
+}
+#app-mount{
+    backdrop-filter: blur(10px);
+    background: linear-gradient(137deg,  rgba(7, 15, 39, 0.7) 28%, rgba(92, 45, 111, 0.6) 52%, rgba(38, 17, 76, 0.8) 79%);
+}
+.visual-refresh.theme-dark, .visual-refresh .theme-dark {
+    --font-primary: 'Montserrat';
+    --bg-mod-faint: rgba(0, 0, 0, 0.7);
+    --background-mod-faint: rgba(132, 107, 153, 0.6);
+    --bg-mod-subtle: rgba(132, 107, 153, 0.6);
+    --background-mod-subtle: transparent;
+    --bg-mod-normal: yellow;
+    --background-mod-normal: rgba(132, 107, 153, 0.6);
+    --bg-mod-strong: rgba(132, 107, 153, 0.6);
+    --background-mod-strong: rgba(132, 107, 153, 0.6);
+    --background-primary: none;
+    --bg-base-primary: blue;
+    --background-base-low: none;
+    --background-secondary: none;
+    --bg-base-secondary: none;
+    --background-base-lower: none;
+    --background-tertiary: none;
+    --bg-base-tertiary: none;
+    --background-base-lowest: none;
+    --home-background: none;
+    --background-surface-highest: rgba(0, 0, 0, 0.7);;
+    --background-floating: rgba(0, 0, 0, 0.7);
+    --bg-surface-raised: rgba(0, 0, 0, 0.7);
+    --background-surface-higher: rgba(0, 0, 0, 0.7);
+    --background-surface-high: rgba(0, 0, 0, 0.7);
+    --chat-background-default: rgba(0, 0, 0, 0.1);
+    --autocomplete-bg: rgba(0, 0, 0, 0.7);
+    --background-modifier-selected: rgba(132, 107, 153, 0.6);
+    --background-modifier-hover: rgba(132, 107, 153, 0.6);
+}
+.visual-refresh [class^="panels_"]{
+    width: calc(100% - var(--space-xs)* 10);
+    margin-left: 70px;
+    bottom: 25px;
+    border: none;
+}
+[class^="sidebar_"]>[class^="wrapper_"]{
+    margin-bottom: 0;
+}
+[class^="tutorialContainer_"]{
+    margin-top: 5px;
+}
+[data-list-item-id^="guildsnav_"]>[class^="icon_"],
+[class^="closedFolderIconWrapper_"]>[class^="icon_"]{
+    border-radius: 20px!important;
+}
+[class^="listItem_"]{
+    transform: scale(1.2);
+    padding: 4px;
+}
+[class^="listItem_"]>[class^="pill_"]{
+    left: 7px;
+}
+[class^="stack_"]{
+    height: auto!important;
+}
+[class^="expandedFolderBackground_"]{
+    margin-left: 3px;
+}
+[class^="memberInner_"]>[class^="avatar_"]{
+    transform: scale(1.2);
+    padding: 4px;
+}
+[class^="member_"]>[class^="childContainer_"]{
+    padding: 0;
+}
+[class^="typing_"]{
+    width: fit-content;
+    margin-left: auto;
+    top: -25px;
+}
+.visual-refresh [class^="sidebarList_"]{
+    backdrop-filter: none;
+    width: 260px;
+}
