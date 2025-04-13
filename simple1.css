@@ -102,5 +102,6 @@
 .visual-refresh [class^="channelTextArea_"]{
     background: url(https://cdn.discordapp.com/assets/collectibles/nameplates/nameplatetest/kitsune/static.png);
     background-position: center;
-    background-size: 101%;
+    background-size: cover;
+    background-repeat: no-repeat;
 }
