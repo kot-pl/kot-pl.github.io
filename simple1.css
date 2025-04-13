@@ -11,7 +11,7 @@
     background: url(https://w.wallhaven.cc/full/lq/wallhaven-lqrlyl.jpg)center/cover;
 }
 #app-mount{
-    backdrop-filter: blur(10px);
+    
     background: linear-gradient(137deg,  rgba(7, 15, 39, 0.7) 28%, rgba(92, 45, 111, 0.6) 52%, rgba(38, 17, 76, 0.8) 79%);
 }
 .visual-refresh.theme-dark, .visual-refresh .theme-dark {
@@ -43,6 +43,10 @@
     --autocomplete-bg: rgba(0, 0, 0, 0.7);
     --background-modifier-selected: rgba(132, 107, 153, 0.6);
     --background-modifier-hover: rgba(132, 107, 153, 0.6);
+    --border-subtle: transparent;
+    --app-border-frame: transparent;
+    --background-modifier-accent: transparent;
+    --interactive-normal: rgb(136, 77, 184);
 }
 .visual-refresh [class^="panels_"]{
     width: calc(100% - var(--space-xs)* 10);
@@ -88,4 +92,15 @@
 .visual-refresh [class^="sidebarList_"]{
     backdrop-filter: none;
     width: 260px;
+}
+.visual-refresh [class^="sidebarList_"]>[class^="container_"]{
+    padding-bottom: 100px;
+}
+.visual-refresh [class^="topicsDropdown_"]{
+    background: rgba(0, 0, 0, 0.7);
+}
+.visual-refresh [class^="channelTextArea_"]{
+    background: url(https://cdn.discordapp.com/assets/collectibles/nameplates/nameplatetest/kitsune/static.png);
+    background-position: center;
+    background-size: 101%;
 }
