@@ -1,0 +1,141 @@
+/**
+* @name kot simple2
+* @version 1
+* @description test1
+* @author kot-pl
+* @invite 0
+* @source kot-pl.github.io
+*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+.visual-refresh body{
+    background: url(https://w.wallhaven.cc/full/lq/wallhaven-lqrlyl.jpg)center/cover;
+}
+#app-mount{
+    background: linear-gradient(137deg,  rgba(7, 15, 39, 0.7) 28%, rgba(92, 45, 111, 0.6) 52%, rgba(38, 17, 76, 0.8) 79%);
+}
+.visual-refresh.theme-dark, .visual-refresh .theme-dark {
+    --font-primary: 'Montserrat';
+    --bg-mod-faint: rgba(0, 0, 0, 0.7);
+    --background-mod-faint: rgba(132, 107, 153, 0.6);
+    --bg-mod-subtle: rgba(132, 107, 153, 0.6);
+    --background-mod-subtle: rgba(132, 107, 153, 0.6);
+    --bg-mod-normal: yellow;
+    --background-mod-normal: rgba(132, 107, 153, 0.6);
+    --bg-mod-strong: rgba(132, 107, 153, 0.6);
+    --background-mod-strong: rgba(132, 107, 153, 0.6);
+    --background-primary: none;
+    --bg-base-primary: blue;
+    --background-base-low: none;
+    --background-secondary: none;
+    --bg-base-secondary: none;
+    --background-base-lower: none;
+    --background-tertiary: none;
+    --bg-base-tertiary: none;
+    --background-base-lowest: none;
+    --home-background: none;
+    --background-surface-highest: rgba(0, 0, 0, 0.7);;
+    --background-floating: rgba(0, 0, 0, 0.7);
+    --bg-surface-raised: rgba(0, 0, 0, 0.7);
+    --background-surface-higher: rgba(0, 0, 0, 0.7);
+    --background-surface-high: rgba(0, 0, 0, 0.7);
+    --chat-background-default: rgba(0, 0, 0, 0.1);
+    --autocomplete-bg: rgba(0, 0, 0, 0.7);
+    --background-modifier-selected: rgba(132, 107, 153, 0.6);
+    --background-modifier-hover: rgba(132, 107, 153, 0.6);
+    --border-subtle: transparent;
+    --app-border-frame: transparent;
+    --background-modifier-accent: transparent;
+    --modal-footer-background: transparent;
+    --interactive-normal: rgb(192, 146, 230);
+    --modal-background: rgba(0, 0, 0, 0.7);
+}
+.visual-refresh .panels_c48ade{
+    width: calc(100% - var(--space-xs)* 10);
+    margin-left: 70px;
+    bottom: 2px;
+    border: none;
+}
+.visual-refresh .wrapper_ef3116{
+    margin-bottom: 0;
+}
+.visual-refresh .icon__6e9f8,
+.visual-refresh .guildIcon__48112{
+    border-radius: 20px!important;
+}
+.visual-refresh .listItem__650eb{
+    transform: scale(1.2);
+    padding: 4px;
+}
+.visual-refresh .pill_e5445c{
+    left: 7px;
+}
+.visual-refresh .stack_dbd263{
+    height: auto!important;
+}
+.visual-refresh .expandedFolderBackground__48112{
+    margin-left: 3px;
+}
+.visual-refresh .avatar__91a9d{
+    transform: scale(1.2);
+    padding: 4px;
+}
+.visual-refresh .childContainer__91a9d{
+    padding: 0;
+}
+.visual-refresh .typing_b88801{
+    width: fit-content;
+    margin-left: auto;
+    top: -25px;
+    font-size: 16px;
+}
+.visual-refresh .cooldownWrapper_b21699 .text-sm\/medium_cf4812{
+    font-size: 16px;
+}
+.visual-refresh .sidebarList_c48ade{
+    backdrop-filter: none;
+    width: 260px;
+}
+.visual-refresh .channelTextArea_f75fb0{
+    background: url(https://cdn.discordapp.com/assets/collectibles/nameplates/nameplatetest/kitsune/static.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-bottom: 4px;
+}
+.visual-refresh .channelTextArea_f75fb0:focus-within{
+    border: 1px solid var(--border-faint);
+}
+.visual-refresh .form_f75fb0{
+    margin-top: 10px;
+}
+.visual-refresh .panel__5dec7,
+.visual-refresh .footer__45690,
+.visual-refresh .reaction__23977,
+.visual-refresh .reactionBtn__23977,
+.button_f563df{
+    background: none;
+}
+/* homeicon*/
+[data-list-item-id="guildsnav___home"]:before{
+    content: "";
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    background: url(https://w.wallhaven.cc/full/yj/wallhaven-yj53gd.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+[data-list-item-id="guildsnav___home"] .childWrapper__6e9f8{
+    display: none;
+}
+/*unreadbar*/
+.unread__2ea32{
+    height: 30px;
+    width: 2px;
+    top: 2px;
+    left: 0;
+    margin-top: 0px;
+	background-color: rgba(182, 95, 223, 0.822);
+}
