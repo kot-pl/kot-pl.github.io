@@ -133,6 +133,7 @@ html {
     border-radius: 15px;
 }
 .visual-refresh [class^="contentWrapper_"]>[id="emoji-picker-tab-panel"]>[class^="emojiPicker_"],
-.visual-refresh [class^="panels_"]>[class^="panel_"]{
+.visual-refresh [class^="panels_"]>[class^="panel_"],
+.visual-refresh [class^="nowPlayingColumn_"]{
     background: transparent;
 }
