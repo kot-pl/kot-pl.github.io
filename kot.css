@@ -6,171 +6,130 @@
 * @invite 0
 * @source kot-pl.github.io/kot.css
 */
-.theme-dark{
-    --background-primary: #100f15;
-    --background-secondary: #17171c;
-    --background-secondary-alt: #17171c;
-    --background-tertiary: #100f15;
-    --background-floating: #17171c;
-    --autocomplete-bg: #17171c;
-    --channeltextarea-background: #17171c;
-    --modal-background: #17171c;
-    --card-secondary-bg: #17171c;
-    --bg-mod-faint: #17171c;
-    --bg-mod-strong: #85103362;
-    --text-link: #e04d79;
-    --text-positive:#e04d79; 
-    --scrollbar-auto-thumb: #931c40;
-    --scrollbar-thin-thumb: #931c40;
-    --status-danger: #931c40;
-    --mention-background: #931c40;
-    --brand-15a: #931c40;
-    --brand-260: #931c40;
-    --brand-400: #931c40;
-    --brand-500: #931c40;
-    --brand-560: #931c4098;
-    --brand-600: #931c40;
-    --control-brand-foreground-new: #931c40;
-    --badge-brand-text: white;
-    --text-brand: #e04d79;
-    --mention-foreground: white;
-    --home-background: transparent;
-    --scrollbar-auto-track: transparent;
-    --shadow-ledge: transparent;
-    --bg-base-primary: transparent;
-    --modal-footer-background: transparent;
-    --background-modifier-accent: transparent;
-    --control-brand-foreground: #931c40;
-    --background-accent: #931c40;
-    --background-modifier-active: rgba(160, 46, 80, 0.6);
-    --background-modifier-hover: rgba(160, 46, 80, 0.2);
-    --background-modifier-selected: rgba(160, 46, 80, 0.6);
-    --menu-item-default-active-bg: #931c4098;
-    --primary-560: #931c40;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+html {
+    font-size: 20px!important;
 }
-[class^="typeWindows_"][class*="withFrame_"]{
-    height: 0;
+.visual-refresh body {
+    background-image: url(https://i.imgur.com/pGp07BI.png);
+    background-size: cover;
 }
-[class^="wordmarkWindows_"],
-[class*="mentioned_"]::before,
-[class*="replying_"]::before,
-[class^=hoverBarButton_]:has(>div>[class^="emoji"]),
-[class^=hoverBarButton_]:has(>svg>[d^="M21.7 7.3a1"]),
-[class^="buttonsInner_"]>[class^="separator_"],
-
-[id="message-save-for-later-upsell"]{
-    display: none;
+:root{
+    --color1: rgb(60, 43, 61);
+    --color2: rgb(35, 23, 36);
+    --color3: rgba(128, 83, 133, 0.7);
+    --chatcolor: rgba(52, 38, 53, 0.342);
+    --linkcolor: rgb(173, 111, 180);
 }
-[class^="markup_"] code{
-    border: transparent;
+.visual-refresh.theme-dark, .visual-refresh .theme-dark {
+    --font-primary: "Montserrat";
+    --bg-mod-faint: var(--color1);
+    --background-mod-faint: var(--color1);
+    --bg-mod-subtle: var(--color1);
+    --background-mod-subtle: var(--color1);
+    --bg-mod-normal: yellow;
+    --background-mod-normal: var(--color1);
+    --bg-mod-strong: var(--color3);
+    --background-mod-strong: var(--color1);
+    --background-primary: unset;
+    --bg-base-primary: blue;
+    --background-base-low: unset;
+    --background-secondary: unset;
+    --bg-base-secondary: unset;
+    --background-base-lower: unset;
+    --background-tertiary: unset;
+    --bg-base-tertiary: unset;
+    --background-base-lowest: unset;
+    --background-surface-highest: var(--color1);
+    --background-floating: var(--color2);
+    --bg-surface-raised: var(--color1);
+    --bg-surface-overlay: var(--color2);
+    --background-surface-higher: var(--color2);
+    --background-surface-high: var(--color2);
+    --chat-background-default: var(--chatcolor);
+    --modal-background: var(--color2);
+    --modal-footer-background: var(--color2);
+    --message-reacted-background: var(--color1);
+    --blurple-35: var(--color3);
+    --blurple-50: var(--color3);
+    --brand-360: var(--color3);
+    --brand-500: var(--color1);
+    --brand-560: var(--color2);
+    --brand-600: var(--color3);
+    --input-border: transparent;
+    --autocomplete-bg: var(--color2);
+    --text-link: var(--linkcolor);
+    --scrollbar-auto-thumb: var(--color3);
+    --scrollbar-thin-thumb: var(--color3);
+    --card-primary-bg: transparent;
+    --background-secondary-alt: var(--color1);
 }
-[class^="typeWindows_"]>[class*="winButton"]{
-    padding: 10px;
-    margin-top: 5px;
+.visual-refresh [class^="panels_"]{
+    width: calc(100% - var(--space-xs)* 11);
+    margin-left: 80px;
+    bottom: 15px;
+    border: none;
 }
-[class^="upperContainer_"]>[class^="children_"]{
-    -webkit-app-region: drag;
+.visual-refresh [class^="listItem_"]{
+    transform: scale(1.2);
+    padding-top: 4px;
+    padding-bottom: 4px;
 }
-[class^="upperContainer_"]>[class^="toolbar_"],
-[class^="chatIcon_"]{
-    margin-right: 140px;
+[id="guild-list-unread-dms"]{
+    gap: 15px!important;
 }
-[class^="message_"]>[class^="contents_"],
-[class^="message_"]>[id^="message-accessories-"]{
-    background: #17171c;
-    border-radius: 8px;
-    max-width: max-content;
-    margin-top: 5px;
-    padding: 10px!important;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2)
+.visual-refresh [class^="stack_"]{
+    height: auto!important;
 }
-[class^="chat_"]>[class^="content_"]>[class^="container_"],
-[class^="membersWrap_"]>[class^="members_"]{
-    border-top-left-radius: 20px!important;
+[class^="sidebar_"]>[class^="wrapper_"]{
+    margin-bottom: 0;
 }
-div[class^="sidebar_"]{
-    border-radius: 0!important;
+[data-list-item-id^="guildsnav_"]>[class^="icon_"],
+[class^="folderPreview_"]>[class^="icon_"]{
+    border-radius: 20px!important;
 }
-[id^="chat-messages-"]>[class^="message_"][class*="mentioned_"],
-[id^="chat-messages-"]>[class^="message_"][class*="replying_"]{
-    margin-left: 5px;
-    background: linear-gradient(to left, rgba(138, 199, 40, 0),rgba(160, 46, 116, 0.2));
+[class^="listItem_"]>[class^="pill_"]{
+    left: 7px;
+}
+.visual-refresh [class^="tutorialContainer_"]{
+    margin-top: 10px;
+}
+.visual-refresh [class^="sidebarList_"],
+.visual-refresh [class^="sidebar_"]>[class^="wrapper_"],
+.visual-refresh [class^="contentRegionScroller_"]>[class^="contentColumn"],
+.visual-refresh [class^="sidebarRegionScroller_"]>[class^="sidebar_"]{
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 5px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
     border-radius: 20px;
 }
-[class^="newMessagesBar_"],
-[class^="jumpToPresentBar_"],
-[class^="newTopicsBarContainer_"],
-[class^="buttons_"]>[class^="buttonsInner_"]{
-    background: #17171c;
-    opacity: 1;
+.visual-refresh [class^="sidebarRegionScroller_"]{
+    margin-top: 30px;
 }
-[class^="scrollerInner_"]>[class^="divider"]{
-    border-top: thin solid #931c40;
-    --divider-color: #931c40;
+.visual-refresh [class^="contentRegionScroller_"]{
+    height: calc(100% - 33px);
 }
-[class^="scrollerInner_"]>[class^="divider_"]>[class^="content_"]{
-    background: #17171c;
-    padding: 10px;
-}
-/*unreadbar*/
-[class^="unread"][class*="unreadImportant"]{
-    height: 30px;
-    width: 2px;
-    top: 2px;
-    left: 0;
-    margin-top: 0px;
-	background: #931c40;
-}
-/*name color fix*/
-[class^="username"]{ 
-	filter: contrast(.3) brightness(1.2) saturate(300%);
-}
-/*radial memberlist*/
-[class^="childContainer_"]:has([fill="#23a55a"],[mask="url(#svg-mask-status-online)"]){
-    background: linear-gradient(to left, rgba(138, 199, 40, 0),rgba(46, 160, 46, 0.2));
+.visual-refresh [class^="page_"]{
+    background-color: rgba(0, 0, 0, 0.4);
+    margin: 5px;
+    box-shadow: 0 0 5px rgba(255, 255, 255, 0.2);
     border-radius: 20px;
+    width: calc(100% - 15px);
+    height: calc(100% - 10px);
 }
-[class^="childContainer_"]:has([fill="#f23f43"],[mask="url(#svg-mask-status-dnd)"]){
-    background: linear-gradient(to left, rgba(138, 199, 40, 0),rgba(160, 46, 46, 0.2));
-    border-radius: 20px;
+.visual-refresh [class^="typing_"]{
+    width: fit-content;
+    margin-left: auto;
+    top: -25px;
+    font-size: 16px;
 }
-[class^="childContainer_"]:has([fill="#593695"],[mask="url(#svg-mask-status-streaming)"]){
-    background: linear-gradient(to left, rgba(138, 199, 40, 0),rgba(147, 46, 160, 0.2));
-    border-radius: 20px;
+.visual-refresh [class^="cooldownWrapper_"]>[data-text-variant="text-sm/medium"]{
+    font-size: 16px;
 }
-[class^="childContainer_"]:has([fill="#f0b232"],[mask="url(#svg-mask-status-idle)"]){
-    background: linear-gradient(to left, rgba(138, 199, 40, 0),rgba(160, 139, 46, 0.2));
-    border-radius: 20px;
+.visual-refresh [class^="channelTextArea_"]{
+    margin-bottom: 10px;
+    border-radius: 15px;
 }
-[class*="botTagOP_"],
-[class^="appLauncherOnboardingCommandName_"],
-[class^="newBadge_"],
-[class^="titleBadge_"]{
-    color: white!important;
-}
-[class^="control_"]>[class^="container_"],
-[class^="bar_"]>[class^="barFill_"]{
-    background: #931c40!important;
-}
-[class^="headerBar_"]>[class^="searchBar_"]{
-    margin-right: 150px!important;
-}
-/*color channel and memberlist*/
-[class^="membersGroup_"][class*="container_"],
-[class^="name_"][class*="container"],
-[class^="privateChannelsHeaderContainer_"],
-[class^="peopleColumn_"]>[class^="sectionTitle_"]>[class^="title_"][class*="container_"]{
-    color: #e04d79;
-    text-transform: unset;
-    font-size: 14px;
-    margin-bottom: 5px;
-}
-/*test*/
-[data-list-id="chat-messages"] > [class^=wrapper_],
-[data-list-id="chat-messages"] > [class^=wrapper_] > [class^=wrapper_]{
-	background: unset; 
-}
-
-[class^="timestamp_"]>[aria-label^="Today"]::before{
-    content: "Today at ";
+.visual-refresh [class^="contentWrapper_"]>[id="emoji-picker-tab-panel"]>[class^="emojiPicker_"]{
+    background: transparent;
 }
