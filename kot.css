@@ -34,7 +34,7 @@ html {
     --background-primary: unset;
     --bg-base-primary: blue;
     --background-base-low: unset;
-    --background-secondary: unset;
+    --background-secondary: var(--color2);
     --bg-base-secondary: unset;
     --background-base-lower: unset;
     --background-tertiary: unset;
@@ -54,7 +54,7 @@ html {
     --blurple-50: var(--color3);
     --brand-360: var(--color3);
     --brand-500: var(--color1);
-    --brand-560: var(--color2);
+    --brand-560: var(--color3);
     --brand-600: var(--color3);
     --input-border: transparent;
     --autocomplete-bg: var(--color2);
@@ -63,12 +63,14 @@ html {
     --scrollbar-thin-thumb: var(--color3);
     --card-primary-bg: transparent;
     --background-secondary-alt: var(--color1);
+    --user-profile-overlay-background: transparent;
 }
 .visual-refresh [class^="panels_"]{
-    width: calc(100% - var(--space-xs)* 11);
-    margin-left: 80px;
+    width: calc(100% - var(--space-xs)* 10);
+    margin-left: 70px;
     bottom: 15px;
     border: none;
+    padding-left: 10px;
 }
 .visual-refresh [class^="listItem_"]{
     transform: scale(1.2);
@@ -130,6 +132,7 @@ html {
     margin-bottom: 10px;
     border-radius: 15px;
 }
-.visual-refresh [class^="contentWrapper_"]>[id="emoji-picker-tab-panel"]>[class^="emojiPicker_"]{
+.visual-refresh [class^="contentWrapper_"]>[id="emoji-picker-tab-panel"]>[class^="emojiPicker_"],
+.visual-refresh [class^="panels_"]>[class^="panel_"]{
     background: transparent;
 }
