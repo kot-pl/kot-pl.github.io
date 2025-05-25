@@ -51,7 +51,7 @@ html {
     --message-reacted-background: var(--color1);
     --blurple-26: var(--color3);
     --blurple-35: var(--color3);
-    --blurple-50: var(--color3);
+    --blurple-50: var(--linkcolor);
     --opacity-blurple-16: var(--color2);
     --brand-360: var(--color3);
     --brand-500: var(--color1);
