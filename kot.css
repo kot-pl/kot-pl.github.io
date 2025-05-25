@@ -11,14 +11,14 @@ html {
     font-size: 20px!important;
 }
 .visual-refresh body {
-    background: url(https://w.wallhaven.cc/full/q6/wallhaven-q6poqd.png)center/cover;
+    background: url(https://images4.alphacoders.com/132/thumb-1920-1325116.png)center/cover;
 }
 :root{
-    --color1: rgb(78, 60, 72);
-    --color2: rgb(37, 28, 37);
-    --color3: rgba(128, 83, 133, 0.7);
-    --chatcolor: rgba(37, 28, 37, 0.6);
-    --linkcolor: rgb(173, 111, 180);
+    --color1: rgb(60, 78, 62);
+    --color2: rgb(28, 37, 30);
+    --color3: rgba(83, 133, 91, 0.7);
+    --chatcolor: rgba(29, 37, 28, 0.6);
+    --linkcolor: rgb(113, 180, 111);
 }
 .visual-refresh.theme-dark, .visual-refresh .theme-dark {
     --font-primary: "Montserrat";
@@ -107,7 +107,7 @@ html {
     margin: 10px;
     width: 99%;
     height: 98%;
-    box-shadow: 0 0 5px #d695fca8;
+    box-shadow: 0 0 5px #95fcb7a8;
     border-radius: 20px;
 }
 .visual-refresh div[class*="systemBar_"]{
