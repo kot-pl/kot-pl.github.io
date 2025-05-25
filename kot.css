@@ -52,6 +52,7 @@ html {
     --blurple-26: var(--color3);
     --blurple-35: var(--color3);
     --blurple-50: var(--color3);
+    --opacity-blurple-16: var(--color2);
     --brand-360: var(--color3);
     --brand-500: var(--color1);
     --brand-560: var(--color3);
@@ -67,6 +68,10 @@ html {
     --custom-channel-members-bg: transparent;
     --guildbar-folder-size: 45px;
     --app-border-frame: none;
+    --mention-background: var(--color3);
+    --mention-foreground: var(--linkcolor);
+    --button-outline-primary-background-hover: var(--color3);
+    --button-outline-primary-border-hover: var(--color3);
 }
 .visual-refresh div[class^="nowPlayingColumn_"],
 .visual-refresh div[class^="messagesPopoutWrap_"] div[class^="footer_"]{
@@ -124,9 +129,13 @@ html {
     font-size: 16px;
 }
 .visual-refresh div[class^="channelTextArea_"]{
-    margin-bottom: 2px;
+    margin-bottom: 5px;
     border-radius: 15px;
 }
 .visual-refresh main[class^="chatContent_"] form[class^="form_"]{
     margin-top: 10px;
+}
+.visual-refresh div[class^="control_"] div[class^="container_"],
+.visual-refresh div[class^="advancedOptionInner_"] div[class^="container_"]{
+    background-color: var(--color2)!important;
 }
