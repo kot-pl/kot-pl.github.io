@@ -1,0 +1,81 @@
+.visual-refresh div[class^="sidebar_"] section[class^="panels_"] {
+    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px);
+    left: 0px;
+    background: unset;
+    bottom: 5px;
+    border-radius: 0px;
+    border: none;
+}
+.visual-refresh div[class^="sidebar_"] nav[class^="wrapper_"] {
+    margin-bottom: unset;
+}
+.visual-refresh ul[class^="tree_"] div[class^="listItem_"]{
+    transform: scale(1.2);
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.visual-refresh ul[class^="stack_"]{
+    height: unset!important;
+}
+[id="guild-list-unread-dms"]{
+    gap: 15px!important;
+}
+.visual-refresh div[role="treeitem"] img[class^="icon_"],
+.visual-refresh div[role="treeitem"] div[class^="childWrapper_"],
+.visual-refresh div[class^="folderPreview_"] div[class^="icon_"],
+.visual-refresh div[class^="circleIconButton_"]{
+    border-radius: 20px;
+}
+.visual-refresh div[class^="listItem_"] div[class^="pill_"]{
+    margin-left: 6px;
+}
+.visual-refresh div[class*="systemBar_"]{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.visual-refresh div[class^="typing_"]{
+    width: fit-content;
+    margin-left: auto;
+    top: -25px;
+    font-size: 16px;
+}
+.visual-refresh div[class^="cooldownWrapper_"] div[data-text-variant="text-sm/medium"]{
+    font-size: 16px;
+}
+.visual-refresh div[class^="channelTextArea_"]{
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+.visual-refresh main[class^="chatContent_"] form[class^="form_"]{
+    margin-top: 10px;
+}
+.visual-refresh div[class^="scrollableContainer_"] div[class^="inner_"] div[class^="buttons_"]>:nth-child(1),
+.visual-refresh div[class^="scrollableContainer_"] div[class^="inner_"] div[class^="buttons_"]>:nth-child(2),
+.visual-refresh div[class^="scrollableContainer_"] div[class^="inner_"] div[class^="buttons_"]>:nth-child(3),
+.visual-refresh div[class^="scrollableContainer_"] div[class^="inner_"] div[class^="buttons_"]>:nth-child(4),
+.visual-refresh div[class^="buttons_"] div[class^="channelAppLauncher_"]{
+    display: none;
+}
+.visual-refresh span[class^="username_"]{ 
+	filter: contrast(.3) brightness(1.2) saturate(300%);
+}
+.visual-refresh div[class^="control_"]>div[class^="container_"]{
+    background-color: var(--linkcolor)!important;
+}
+.visual-refresh div[class^="base_"]>div[class^="content_"]{
+    margin-top: var(--custom-guild-list-width);
+}
+.visual-refresh div[class^="sidebar_"]>nav[class^="wrapper_"] {
+    top: unset;
+    bottom: unset;
+    height: 100vw;
+    left: 10px;
+    position: fixed;
+    rotate: -90deg;
+    transform-origin: top left;
+}
+.visual-refresh div[class^="blobContainer_"],
+.visual-refresh div[class^="folderPreview_"],
+.visual-refresh div[class^="listItemWrapper_"]>div[class^="wrapper_"]{
+    rotate: 90deg;
+}
