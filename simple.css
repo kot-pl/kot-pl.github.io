@@ -6,124 +6,88 @@
 * @invite 0
 * @source kot-pl.github.io
 */
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@100;300;400;500;700&display=swap');
-::placeholder, body, button, input, select, textarea {
-font-family: 'Comfortaa' ;
+.visual-refresh body {
+    opacity: 0.85;
+    background: url(https://files.catbox.moe/0qa67r.jpg)center/cover;
 }
-.visual-refresh body{
-    background-image: url(https://w.wallhaven.cc/full/5w/wallhaven-5wxj21.jpg);
-    background-size: cover;
-    background-attachment: fixed;
+#app-mount{
+    width: calc(100% - 5px);
+    height: calc(100% - 5px);
+    border: 2px solid rgb(82, 79, 81);
+    border-radius: 20px;
 }
 .visual-refresh.theme-dark, .visual-refresh .theme-dark {
-    --bg-mod-faint: var(--color1);
-    --background-mod-faint: var(--color1);
-    --bg-mod-subtle: var(--color1);
-    --background-mod-subtle: transparent;
-    --bg-mod-normal: yellow;
-    --background-mod-normal: var(--color1);
-    --bg-mod-strong: var(--bgcolor);
-    --background-mod-strong: var(--color1);
-    --background-primary: transparent;
-    --bg-base-primary: blue;
-    --background-base-low: transparent;
-    --background-secondary: transparent;
-    --bg-base-secondary: transparent;
-    --background-base-lower: transparent;
-    --background-tertiary: var(--bgcolor);
-    --bg-base-tertiary: transparent;
-    --background-base-lowest: transparent;
-    --background-surface-highest: var(--color1);
-    --background-floating: var(--popupcolors);
-    --bg-surface-raised: var(--popupcolors);
-    --background-surface-higher: var(--popupcolors);
-    --background-surface-high: var(--popupcolors);
-    --chat-background-default: var(--chatbackground);
-    --modal-background: var(--popupcolors);
-    --autocomplete-bg: var(--popupcolors);
-    --modal-footer-background: transparent;
-    --scrollbar-auto-thumb: var(--color1);
-    --scrollbar-thin-thumb: var(--color1);
-    --bg-brand: var(--color1);
-    --text-brand: white;
-    --text-normal: rgba(255, 255, 255, 0.8);
-    --text-link: var(--linkcolor);
-    --mention-background: var(--color1);
-    --brand-500: var(--color2);
-    --button-filled-brand-background-hover: var(--color1);
-    --button-filled-brand-background-active: var(--color1);
-    --checkbox-background-checked: var(--color1);
-    --checkbox-border-checked: var(--color1);
-    --message-reacted-background: var(--color1);
-    --brand-260: var(--color1);
-    --brand-400: var(--color1);
-    --brand-560: white;
-    --opacity-blurple-16: var(--color2);
-    --blurple-50: var(--color1);
-    --mention-foreground: white;
-    --bg-overlay-selected: var(--color1);
+    --font-primary: "Segoe UI","Noto Sans", sans-serif;
+    --popout: rgb(37, 31, 39);
+    --color1: rgb(41, 56, 45);
+    --color2: rgb(28, 37, 30);
+    --border-subtle: transparent;
+    --background-primary: var(--popout);
+    --background-base-low: var(--popout);
+    --bg-base-secondary: var(--popout);
+    --background-base-lower: var(--popout);
+    --bg-base-tertiary: var(--popout);
+    --background-base-lowest: var(--popout);
+    --chat-background-default: var(--popout);
 }
-:root{
-    --color1: rgba(143, 63, 110, 0.493);
-    --color2: rgba(93, 70, 104, 0.986);
-    --linkcolor: rgb(161, 141, 173);
-    --bgcolor: rgba(37, 29, 29, 0.603);
-    --chatbackground: rgba(165, 42, 69, 0);
-    --popupcolors: rgba(0, 0, 0, 0.7);
-}
-.visual-refresh [class^="panels_"]{
-    width: calc(100% - var(--space-xs)* 10);
-    border-radius: 0;
+.visual-refresh div[class^="sidebar_"] section[class^="panels_"] {
+    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px);
+    left: var(--custom-guild-list-width);
+    background: unset;
+    bottom: 0px;
+    border-radius: 0px;
     border: none;
-    margin-left: 70px;
-    bottom: 5px;
 }
-.visual-refresh [class^="channelTextArea_"],
-.visual-refresh [class^="channelTextArea_"]:focus-within{
-    margin-bottom: 5px;
-    border: none;
-    background: none;
+.visual-refresh div[class^="sidebar_"] nav[class^="wrapper_"] {
+    margin-bottom: unset;
 }
-[class^="typing_"]{
+.visual-refresh ul[class^="tree_"] div[class^="listItem_"]{
+    transform: scale(1.2);
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.visual-refresh ul[class^="stack_"]{
+    height: unset!important;
+}
+[id="guild-list-unread-dms"]{
+    gap: 15px!important;
+}
+.visual-refresh div[role="treeitem"] img[class^="icon_"],
+.visual-refresh div[role="treeitem"] div[class^="childWrapper_"],
+.visual-refresh div[class^="folderPreview_"] div[class^="icon_"],
+.visual-refresh div[class^="circleIconButton_"]{
+    border-radius: 20px;
+}
+.visual-refresh div[class^="listItem_"] div[class^="pill_"]{
+    margin-left: 6px;
+}
+.visual-refresh div[class*="systemBar_"]{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.visual-refresh div[class^="typing_"]{
     width: fit-content;
     margin-left: auto;
     top: -25px;
+    font-size: 16px;
 }
-.visual-refresh [class^="newMessagesBar_"],
-.visual-refresh [class^="stackedBars_"],
-.visual-refresh [class^="newTopicsBarContainer_"],
-.visual-refresh [class^="topicsPillContainer_"],
-.visual-refresh [class^="chatHeaderBar_"],
-:where(.visual-refresh) [class^="option_"]:hover{
-    background-color: var(--color1);
+.visual-refresh div[class^="cooldownWrapper_"] div[data-text-variant="text-sm/medium"]{
+    font-size: 16px;
 }
-.visual-refresh [class^="listItem_"]{
-    transform: scale(1.2);
-    padding: 4px;
+.visual-refresh div[class^="channelTextArea_"]{
+    margin-bottom: 1px;
+    border-radius: 15px;
 }
-[data-list-item-id^="guildsnav_"]>[class^="icon_"],
-[class^="closedFolderIconWrapper_"]>[class^="icon_"]{
-    border-radius: 50%!important;
+.visual-refresh main[class^="chatContent_"] form[class^="form_"]{
+    margin-top: 10px;
 }
-.visual-refresh [class^="stack_"]{
-    height: auto!important;
-}
-.visual-refresh [class^="sidebar_"]>[class^="wrapper_"]{
-    margin-bottom: 0;
-}
-[class^="listItem_"]>[class^="pill_"]{
-    left: 7px;
-}
-.visual-refresh [class^="unreadMentions"]{
+.visual-refresh div[class^="scrollableContainer_"] div[class^="inner_"] div[class^="buttons_"]>:nth-child(1),
+.visual-refresh div[class^="scrollableContainer_"] div[class^="inner_"] div[class^="buttons_"]>:nth-child(2),
+.visual-refresh div[class^="scrollableContainer_"] div[class^="inner_"] div[class^="buttons_"]>:nth-child(3),
+.visual-refresh div[class^="scrollableContainer_"] div[class^="inner_"] div[class^="buttons_"]>:nth-child(4),
+.visual-refresh div[class^="buttons_"] div[class^="channelAppLauncher_"]{
     display: none;
 }
-.visual-refresh [class^="panels_"]>[class^="panel_"]{
-    background: transparent;
-}
-.visual-refresh [class^="sidebarList_"]{
-    backdrop-filter: none;
-    width: 260px;
-}
-[class^="member_"]>[class^="childContainer_"]{
-    padding: 0;
+.visual-refresh span[class^="username_"]{ 
+	filter: contrast(.3) brightness(1.2) saturate(300%);
 }
