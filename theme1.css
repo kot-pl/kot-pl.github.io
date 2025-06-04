@@ -1,0 +1,158 @@
+/* Add your own Custom CSS here.
+Have a theme you want to use? Copy and paste the contents here.
+You need to restart (click the restart button) after changing. */
+.visual-refresh body {
+    background: url(https://images4.alphacoders.com/132/thumb-1920-1325116.png)center/cover;
+}
+#app-mount{
+    background-color: rgba(20, 20, 20, 0.7);
+    margin: 10px;
+    width: 99%;
+    height: 98%;
+    box-shadow: 0 0 5px #95fcb7a8;
+    border-radius: 20px;
+}
+.visual-refresh .theme-dark,.visual-refresh.theme-dark{
+    --color1: rgb(41, 56, 45);
+    --color2: rgb(28, 37, 30);
+    --font-primary: "Segoe UI","Noto Sans", sans-serif;
+    --background-base-low: var(--color2);
+    --background-base-lower: var(--color1);
+    --background-surface-high: var(--color1);
+    --background-surface-higher: var(--color1);
+    --background-surface-highest: var(--color1);
+    --background-primary: var(--color1);
+    --background-secondary: var(--color2);
+    --background-tertiary: var(--color1);
+    --background-floating: var(--color1);
+    --modal-background: var(--color1);
+    --modal-footer-background: var(--color2);
+    --user-profile-overlay-background: var(--color2);
+    --autocomplete-bg: var(--color2);
+    --chat-background-default: rgba(29, 44, 33, 0.418);
+}
+.visual-refresh div[class^="app_"],
+.visual-refresh div[class^="app_"] div[class^="container_"],
+.visual-refresh div[class^="bg_"],
+.visual-refresh div[class^="sidebar_"],
+.visual-refresh nav[class^="wrapper_"],
+.visual-refresh div[class^="sidebarList_"] nav[class^="container_"],
+.visual-refresh div[class^="chat_"],
+.visual-refresh div[class^="subtitleContainer_"] section,
+.visual-refresh div[class^="content_"] main[class^="chatContent_"],
+.visual-refresh aside[class^="membersWrap_"] div[class^="members_"],
+.visual-refresh div[class^="members_"] div[class^="content_"] div[class^="member_"],
+.visual-refresh div[class^="chat_"] div[class^="content_"] div[class^="container_"],
+.visual-refresh nav[class^="privateChannels_"],
+.visual-refresh nav[class^="privateChannels_"] div[class^="scroller_"],
+.visual-refresh div[class^="page_"] main[class^="container_"],
+.visual-refresh div[class^="page_"] main[class^="container_"] section,
+.visual-refresh div[class^="page_"] main[class^="container_"] div[class^="tabBody_"],
+.visual-refresh div[class^="nowPlayingColumn_"],
+.visual-refresh div[class^="nowPlayingColumn_"] aside[class^="container_"],
+.visual-refresh div[class^="standardSidebarView_"],
+.visual-refresh div[class^="standardSidebarView_"] div[class^="sidebarRegion_"] div[class^="sidebarRegionScroller_"],
+.visual-refresh div[class^="app_"] div[class^="layers_"] div[class^="layer_"],
+.visual-refresh div[class^="standardSidebarView_"] div[class^="contentRegion_"],
+.visual-refresh div[class^="standardSidebarView_"] div[class^="contentRegion_"] div[class^="contentTransitionWrap_"] div[class^="contentRegionScroller_"],
+.visual-refresh div[class^="chat_"] section[class^="header_"],
+.visual-refresh div[class^="chat_"] div[class^="content_"],
+.visual-refresh div[class^="chat_"] div[class^="content_"] div[class^="pageBody_"],
+.visual-refresh div[class^="chatLayerWrapper_"] div[class^="container_"],
+.visual-refresh div[class^="chatLayerWrapper_"] div[class^="container_"] section[class^="container_"],
+.visual-refresh div[class^="chatLayerWrapper_"] div[class^="container_"] div[class^="chat_"] section[class^="chatContent_"],
+.visual-refresh div[class^="chat_"] div[class^="wrapper_"],
+.visual-refresh div[class^="chat_"] div[class^="wrapper_"] div[class^="channelChatWrapper_"],
+.visual-refresh section[class^="searchResultsWrap_"],
+.visual-refresh div[class^="children_"]::after,
+.visual-refresh div[class^="sidebar_"]::after{
+    background: unset!important;
+}
+.visual-refresh div[class^="sidebar_"] section[class^="panels_"] {
+    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px);
+    left: 0px;
+    background: unset;
+    bottom: 5px;
+    border-radius: 0px;
+    border: none;
+}
+.visual-refresh div[class^="sidebar_"] nav[class^="wrapper_"] {
+    margin-bottom: unset;
+}
+.visual-refresh ul[class^="tree_"] div[class^="listItem_"]{
+    transform: scale(1.2);
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.visual-refresh ul[class^="stack_"]{
+    height: unset!important;
+}
+[id="guild-list-unread-dms"]{
+    gap: 15px!important;
+}
+.visual-refresh div[role="treeitem"] img[class^="icon_"],
+.visual-refresh div[role="treeitem"] div[class^="childWrapper_"],
+.visual-refresh div[class^="folderPreview_"] div[class^="icon_"],
+.visual-refresh div[class^="circleIconButton_"]{
+    border-radius: 20px;
+}
+.visual-refresh div[class^="listItem_"] div[class^="pill_"]{
+    margin-left: 6px;
+}
+.visual-refresh div[class*="systemBar_"]{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.visual-refresh div[class^="typing_"]{
+    width: fit-content;
+    margin-left: auto;
+    top: -25px;
+    font-size: 16px;
+}
+.visual-refresh div[class^="cooldownWrapper_"] div[data-text-variant="text-sm/medium"]{
+    font-size: 16px;
+}
+.visual-refresh div[class^="channelTextArea_"]{
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+.visual-refresh main[class^="chatContent_"] form[class^="form_"]{
+    margin-top: 10px;
+}
+.visual-refresh div[class^="scrollableContainer_"] div[class^="inner_"] div[class^="buttons_"]>:nth-child(1),
+.visual-refresh div[class^="scrollableContainer_"] div[class^="inner_"] div[class^="buttons_"]>:nth-child(2),
+.visual-refresh div[class^="scrollableContainer_"] div[class^="inner_"] div[class^="buttons_"]>:nth-child(3),
+.visual-refresh div[class^="scrollableContainer_"] div[class^="inner_"] div[class^="buttons_"]>:nth-child(4),
+.visual-refresh div[class^="buttons_"] div[class^="channelAppLauncher_"]{
+    display: none;
+}
+.visual-refresh span[class^="username_"]{ 
+	filter: contrast(.3) brightness(1.2) saturate(300%);
+}
+.visual-refresh div[class^="control_"]>div[class^="container_"]{
+    background-color: var(--linkcolor)!important;
+}
+.visual-refresh div[class^="base_"]>div[class^="content_"]{
+    margin-top: var(--custom-guild-list-width);
+}
+.visual-refresh div[class^="sidebar_"]>nav[class^="wrapper_"] {
+    top: unset;
+    bottom: unset;
+    height: 100vw;
+    left: 25px;
+    position: fixed;
+    rotate: -90deg;
+    transform-origin: top left;
+}
+.visual-refresh div[class^="blobContainer_"],
+.visual-refresh div[class^="folderPreview_"],
+.visual-refresh div[class^="listItemWrapper_"]>div[class^="wrapper_"]{
+    rotate: 90deg;
+}
+.visual-refresh li[class^="containerDefault_"]>div[class^="iconVisibility_"]>div[class^="unread_"]{
+    height: 30px;
+    width: 2px;
+    top: 6px;
+    left: 0;
+	background-color: rgba(95, 223, 112, 0.822);
+}
