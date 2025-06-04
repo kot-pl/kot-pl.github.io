@@ -7,48 +7,108 @@
 * @source kot-pl.github.io/kot.css
 */
 .visual-refresh body {
-    background: url(https://images4.alphacoders.com/132/thumb-1920-1325116.png)center/cover;
-}
-#app-mount{
-    background-color: rgba(14, 20, 29, 0.7);
+    opacity: 0.85;
+    background: url(https://files.catbox.moe/0qa67r.jpg)center/cover;
 }
 .visual-refresh.theme-dark, .visual-refresh .theme-dark {
+    --font-primary: "Segoe UI","Noto Sans", sans-serif;
+    --popout: rgb(37, 31, 39);
     --color1: rgb(41, 56, 45);
     --color2: rgb(28, 37, 30);
-    --linkcolor: rgb(58, 136, 68);
-    --text-link: var(--linkcolor);
-    --text-brand: var(--linkcolor);
-    --font-primary: "Segoe UI","Noto Sans", sans-serif;
-    --background-primary: transparent;
-    --background-base-low: transparent;
-    --background-secondary: transparent;
-    --background-secondary-alt: var(--color1);
-    --bg-base-secondary: transparent;
-    --background-base-lower: transparent;
-    --background-tertiary: transparent;
-    --bg-base-tertiary: transparent;
-    --background-base-lowest: transparent;
-    --chat-background-default: transparent;
-    --background-surface-high: var(--color1);
-    --background-surface-higher: var(--color1);
-    --background-surface-highest: var(--color1);
-    --background-floating: var(--color1);
-    --button-filled-brand-background: var(--linkcolor);
-    --button-filled-brand-background-hover: var(--color2);
-    --button-filled-brand-background-active: var(--color2);
-    --message-reacted-background: var(--color1);
-    --message-reacted-text: var(--linkcolor);
-    --modal-background: var(--color1);
-    --mention-background: var(--color1);
-    --mention-foreground: var(--linkcolor);
-    --modal-footer-background: var(--color2);
-    --autocomplete-bg: var(--color1);
-    --user-profile-overlay-background: var(--color2);
-    --scrollbar-auto-thumb: var(--color1);
-    --scrollbar-thin-thumb: var(--color1);
-    --blurple-50: var(--linkcolor);
-    --opacity-blurple-16: var(--color2);
-    --brand-360: var(--linkcolor);
-    --brand-500: var(--color2);
-    --primary-800: var(--linkcolor);
+    --border-subtle: transparent;
+    --background-primary: var(--popout);
+    --background-base-low: var(--popout);
+    --bg-base-secondary: var(--popout);
+    --background-base-lower: var(--popout);
+    --bg-base-tertiary: var(--popout);
+    --background-base-lowest: var(--popout);
+    --chat-background-default: var(--popout);
+}
+.visual-refresh div[class^="sidebar_"] section[class^="panels_"] {
+    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px);
+    left: 0px;
+    background: unset;
+    bottom: 5px;
+    border-radius: 0px;
+    border: none;
+}
+.visual-refresh div[class^="sidebar_"] nav[class^="wrapper_"] {
+    margin-bottom: unset;
+}
+.visual-refresh ul[class^="tree_"] div[class^="listItem_"]{
+    transform: scale(1.2);
+    padding-top: 4px;
+    padding-bottom: 4px;
+}
+.visual-refresh ul[class^="stack_"]{
+    height: unset!important;
+}
+[id="guild-list-unread-dms"]{
+    gap: 15px!important;
+}
+.visual-refresh div[role="treeitem"] img[class^="icon_"],
+.visual-refresh div[role="treeitem"] div[class^="childWrapper_"],
+.visual-refresh div[class^="folderPreview_"] div[class^="icon_"],
+.visual-refresh div[class^="circleIconButton_"]{
+    border-radius: 20px;
+}
+.visual-refresh div[class^="listItem_"] div[class^="pill_"]{
+    margin-left: 6px;
+}
+.visual-refresh div[class*="systemBar_"]{
+    margin-top: 10px;
+    margin-right: 10px;
+}
+.visual-refresh div[class^="typing_"]{
+    width: fit-content;
+    margin-left: auto;
+    top: -25px;
+    font-size: 16px;
+}
+.visual-refresh div[class^="cooldownWrapper_"] div[data-text-variant="text-sm/medium"]{
+    font-size: 16px;
+}
+.visual-refresh div[class^="channelTextArea_"]{
+    margin-bottom: 5px;
+    border-radius: 15px;
+}
+.visual-refresh main[class^="chatContent_"] form[class^="form_"]{
+    margin-top: 10px;
+}
+.visual-refresh div[class^="scrollableContainer_"] div[class^="inner_"] div[class^="buttons_"]>:nth-child(1),
+.visual-refresh div[class^="scrollableContainer_"] div[class^="inner_"] div[class^="buttons_"]>:nth-child(2),
+.visual-refresh div[class^="scrollableContainer_"] div[class^="inner_"] div[class^="buttons_"]>:nth-child(3),
+.visual-refresh div[class^="scrollableContainer_"] div[class^="inner_"] div[class^="buttons_"]>:nth-child(4),
+.visual-refresh div[class^="buttons_"] div[class^="channelAppLauncher_"]{
+    display: none;
+}
+.visual-refresh span[class^="username_"]{ 
+	filter: contrast(.3) brightness(1.2) saturate(300%);
+}
+.visual-refresh div[class^="control_"]>div[class^="container_"]{
+    background-color: var(--linkcolor)!important;
+}
+.visual-refresh div[class^="base_"]>div[class^="content_"]{
+    margin-top: var(--custom-guild-list-width);
+}
+.visual-refresh div[class^="sidebar_"]>nav[class^="wrapper_"] {
+    top: unset;
+    bottom: unset;
+    height: 100vw;
+    left: 10px;
+    position: fixed;
+    rotate: -90deg;
+    transform-origin: top left;
+}
+.visual-refresh div[class^="blobContainer_"],
+.visual-refresh div[class^="folderPreview_"],
+.visual-refresh div[class^="listItemWrapper_"]>div[class^="wrapper_"]{
+    rotate: 90deg;
+}
+.visual-refresh li[class^="containerDefault_"]>div[class^="iconVisibility_"]>div[class^="unread_"]{
+    height: 30px;
+    width: 2px;
+    top: 6px;
+    left: 0;
+	background-color: rgba(182, 95, 223, 0.822);
 }
