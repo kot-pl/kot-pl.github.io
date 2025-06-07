@@ -6,109 +6,75 @@
 * @invite 0
 * @source kot-pl.github.io/kot.css
 */
+@import "https://fonts.googleapis.com/css2?family=Mooli&display=swap";
+:root{
+    --font-primary: "Mooli";
+    --theme-base-color: #293a31;
+    --theme-base-color-amount: 80%;
+    --theme-text-color: #1a5040;
+    --theme-text-color-amount: 50%;
+}
+.theme-dark{
+    --bg-mod-subtle: var(--background-modifier-selected)!important;
+}
 .visual-refresh body {
-    opacity: 0.85;
-    background: url(https://files.catbox.moe/0qa67r.jpg)center/cover;
+    background: url(https://i.imgur.com/09DI1df.jpeg)center/cover;
+    opacity: 0.8; 
 }
-.visual-refresh.theme-dark, .visual-refresh .theme-dark {
-    --font-primary: "Segoe UI","Noto Sans", sans-serif;
-    --popout: rgb(37, 31, 39);
-    --color1: rgb(41, 56, 45);
-    --color2: rgb(28, 37, 30);
-    --border-subtle: transparent;
-    --background-primary: var(--popout);
-    --background-base-low: var(--popout);
-    --bg-base-secondary: var(--popout);
-    --background-base-lower: var(--popout);
-    --bg-base-tertiary: var(--popout);
-    --background-base-lowest: var(--popout);
-    --chat-background-default: var(--popout);
-}
-.visual-refresh div[class^="sidebar_"] section[class^="panels_"] {
-    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px);
-    left: 0px;
-    background: unset;
-    bottom: 5px;
-    border-radius: 0px;
+.visual-refresh [class^="panels_"] {
+    width: calc(100% - var(--space-xs)* 10);
+    margin-left: 64px;
+    bottom: 8px;
     border: none;
 }
-.visual-refresh div[class^="sidebar_"] nav[class^="wrapper_"] {
-    margin-bottom: unset;
+[class^="sidebar_"]>[class^="wrapper_"] {
+    margin-bottom: 0;
 }
-.visual-refresh ul[class^="tree_"] div[class^="listItem_"]{
+[class^="tutorialContainer_"] {
+    margin-top: 5px;
+}
+[data-list-item-id^="guildsnav_"]>[class^="icon_"],
+[class^="folderPreview"]>[class^="icon_"] {
+    border-radius: 50% !important;
+}
+[class^="listItem_"] {
     transform: scale(1.2);
     padding-top: 4px;
     padding-bottom: 4px;
 }
-.visual-refresh ul[class^="stack_"]{
-    height: unset!important;
+[class^="listItem_"]>[class^="pill_"] {
+    left: 7px;
 }
-[id="guild-list-unread-dms"]{
-    gap: 15px!important;
+[class^="stack_"] {
+    height: auto !important;
 }
-.visual-refresh div[role="treeitem"] img[class^="icon_"],
-.visual-refresh div[role="treeitem"] div[class^="childWrapper_"],
-.visual-refresh div[class^="folderPreview_"] div[class^="icon_"],
-.visual-refresh div[class^="circleIconButton_"]{
-    border-radius: 20px;
+[class^="memberInner_"]>[class^="avatar_"] {
+    transform: scale(1.2);
+    padding: 4px;
 }
-.visual-refresh div[class^="listItem_"] div[class^="pill_"]{
-    margin-left: 6px;
+[class^="member_"]>[class^="childContainer_"] {
+    padding: 0;
 }
-.visual-refresh div[class*="systemBar_"]{
-    margin-top: 10px;
-    margin-right: 10px;
+[class^="channelTextArea_"],
+[class^="channelTextArea_"]:focus-within {
+    margin-bottom: 10px;
+    border: none;
+    background: none;
 }
-.visual-refresh div[class^="typing_"]{
+[class^="typing_"] {
     width: fit-content;
     margin-left: auto;
     top: -25px;
-    font-size: 16px;
 }
-.visual-refresh div[class^="cooldownWrapper_"] div[data-text-variant="text-sm/medium"]{
-    font-size: 16px;
+.visual-refresh [class^="form_"]{
+    margin-top: 5px;
 }
-.visual-refresh div[class^="channelTextArea_"]{
-    margin-bottom: 5px;
-    border-radius: 15px;
+[class^="typing_"]>[class^="cooldownWrapper_"]>:first-child{
+    font-size: 20px!important;
 }
-.visual-refresh main[class^="chatContent_"] form[class^="form_"]{
-    margin-top: 10px;
-}
-.visual-refresh div[class^="scrollableContainer_"] div[class^="inner_"] div[class^="buttons_"]>:nth-child(1),
-.visual-refresh div[class^="scrollableContainer_"] div[class^="inner_"] div[class^="buttons_"]>:nth-child(2),
-.visual-refresh div[class^="scrollableContainer_"] div[class^="inner_"] div[class^="buttons_"]>:nth-child(3),
-.visual-refresh div[class^="scrollableContainer_"] div[class^="inner_"] div[class^="buttons_"]>:nth-child(4),
-.visual-refresh div[class^="buttons_"] div[class^="channelAppLauncher_"]{
-    display: none;
+.visual-refresh [class^="panels_"]>[class^="panel_"] {
+    background: none;
 }
 .visual-refresh span[class^="username_"]{ 
 	filter: contrast(.3) brightness(1.2) saturate(300%);
-}
-.visual-refresh div[class^="control_"]>div[class^="container_"]{
-    background-color: var(--linkcolor)!important;
-}
-.visual-refresh div[class^="base_"]>div[class^="content_"]{
-    margin-top: var(--custom-guild-list-width);
-}
-.visual-refresh div[class^="sidebar_"]>nav[class^="wrapper_"] {
-    top: unset;
-    bottom: unset;
-    height: 100vw;
-    left: 10px;
-    position: fixed;
-    rotate: -90deg;
-    transform-origin: top left;
-}
-.visual-refresh div[class^="blobContainer_"],
-.visual-refresh div[class^="folderPreview_"],
-.visual-refresh div[class^="listItemWrapper_"]>div[class^="wrapper_"]{
-    rotate: 90deg;
-}
-.visual-refresh li[class^="containerDefault_"]>div[class^="iconVisibility_"]>div[class^="unread_"]{
-    height: 30px;
-    width: 2px;
-    top: 6px;
-    left: 0;
-	background-color: rgba(182, 95, 223, 0.822);
 }
