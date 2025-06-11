@@ -49,10 +49,10 @@
 .visual-refresh [class^="sidebarList_"]>[class^="container_"]{
     padding-bottom: 0;
 }
-.visual-refresh [class^="panels_"] [class^="container_"] [class^="buttons_"] {
+.visual-refresh [class^="panels_"] [class^="button_"] {
     opacity: 0;
 }
-.visual-refresh [class^="panels_"]:hover [class^="container_"] [class^="buttons_"] {
+.visual-refresh [class^="panels_"]:hover [class^="button_"] {
     opacity: 1;
 }
 .visual-refresh [class^="blobContainer_"]>[class^="wrapper_"],
@@ -82,4 +82,7 @@
 [class^="channelTextArea_"]{
     margin-bottom: 9px;
     padding: 1px;
+}
+[class^="body_"]>[class^="gameWrapper_"]{
+    margin-left: 3px;
 }
