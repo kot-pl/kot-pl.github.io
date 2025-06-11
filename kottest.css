@@ -1,0 +1,85 @@
+/**
+* @name kot test
+* @version 1
+* @description kot test
+* @author kot-pl
+* @invite 0
+* @source kot-pl.github.io/kottest.css
+*/
+@import "https://fonts.googleapis.com/css2?family=Mooli&display=swap";
+:root{
+    --font-primary: "Mooli";
+    --theme-base-color: #293a31;
+    --theme-base-color-amount: 80%;
+    --theme-text-color: #1a5040;
+    --theme-text-color-amount: 50%;
+}
+.visual-refresh.theme-dark, .visual-refresh .theme-dark{
+    --border-subtle: rgba(0, 0, 0, 0);
+    --app-border-frame: rgba(0, 0, 0, 0);
+    --background-modifier-accent: rgba(0, 0, 0, 0);
+    --background-primary: transparent;
+}
+.theme-dark{
+    --bg-mod-subtle: var(--background-modifier-selected)!important;
+}
+.visual-refresh body {
+    background: url(https://kot-pl.github.io/wallpaper1.jpeg)center/cover;
+    opacity: 0.8; 
+}
+.visual-refresh [class^="panels_"]{
+    height: 57px;
+    width: 56px;
+    border-radius: 15px!important;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+.visual-refresh [class^="panels_"]>[class^="wrapper_"] {
+    overflow: hidden;
+}
+.visual-refresh [class^="panels_"]:hover{
+    height: auto;
+    width: 300px;
+    border-radius: 30px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+.visual-refresh [class^="sidebarList_"]>[class^="container_"]{
+    padding-bottom: 0;
+}
+.visual-refresh [class^="panels_"] [class^="container_"] [class^="buttons_"] {
+    opacity: 0;
+}
+.visual-refresh [class^="panels_"]:hover [class^="container_"] [class^="buttons_"] {
+    opacity: 1;
+}
+.visual-refresh [class^="blobContainer_"]>[class^="wrapper_"],
+.visual-refresh [class^="listItemWrapper_"]>[class^="wrapper_"]{
+    transform: scale(1.2);
+}
+.visual-refresh [class^="listItem_"] {
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+[data-list-item-id^="guildsnav_"]>[class^="icon_"],
+[class^="folderPreview"]>[class^="icon_"] {
+    border-radius: 20px;
+}
+[class^="stack_"] {
+    height: auto!important;
+}
+.visual-refresh [class^="subtitleContainer_"]>:first-child,
+.visual-refresh div[class^="page_"]>main[class^="container_"]{
+    border-top-left-radius: 20px!important;
+}
+[class^="typing_"] {
+    width: fit-content;
+    margin-left: auto;
+    top: -25px;
+}
+[class^="channelTextArea_"]{
+    margin-bottom: 9px;
+    padding: 1px;
+}
