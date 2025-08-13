@@ -6,212 +6,81 @@
 * @invite 0
 * @source kot-pl.github.io
 */
-@import "https://fonts.googleapis.com/css2?family=Mooli&display=swap";
-:root,.theme-dark{
-    --bg-mod-subtle: var(--background-accent);
-    --bg-mod-faint: var(--background-primary);
-    --bg-base-secondary: var(--background-primary);
-    --home-card-resting-border: rgba(130, 22, 22, 0.445);
-    --background-accent: rgba(130, 22, 22, 0.445);
-    --background-mentioned: rgba(130, 22, 22, 0.445);
-    --background-mentioned-hover: rgba(130, 22, 22, 0.445);
-    --background-modifier-accent: rgba(130, 22, 22, 0.445);
-    --background-message-highlight: rgba(130, 22, 22, 0.445);
-    --background-message-hover: rgba(130, 22, 22, 0.445);
-    --background-modifier-active: rgba(130, 22, 22, 0.445);
-    --background-modifier-hover: rgba(130, 22, 22, 0.445);
-    --background-modifier-selected: rgba(130, 22, 22, 0.445);
-    --button-secondary-background: rgba(130, 22, 22, 0.9);
-    --button-secondary-background-hover: rgba(130, 22, 22, 0.445);
-    --button-secondary-background-active: rgba(130, 22, 22, 0.9);
-    --mention-foreground: white;
-    --mention-background: rgb(255, 86, 86);
-    --modal-footer-background: hsl(10 calc(1 * 25%) 8% / 1);
-    --input-background: rgba(130, 22, 22, 0.445);
-    --info-warning-foreground: rgba(130, 22, 22, 0.9);
-    --text-link: rgba(248, 68, 68, 0.592);
-    --search-popout-option-fade: transparent;
-    --search-popout-option-fade-hover: #11111100;
-    --scrollbar-auto-thumb: var(--background-accent);
-    --scrollbar-thin-thumb: var(--background-accent);
-    --scrollbar-auto-track: transparent;
-    --legacy-elevation-border: 0 0 0 2px hsl(10 calc(1 * 30%) 25% / 1);
-	--elevation-medium: 0 0 0 2px hsl(10 calc(1 * 30%) 25% / 1);
-	--elevation-high: 0 0 0 2px hsl(10 calc(1 * 30%) 25% / 1);
-    --shadow-low: 0 0 0 2px hsl(10 calc(1 * 30%) 25% / 1);
-    --shadow-high: 0 0 0 2px hsl(10 calc(1 * 30%) 25% / 1);
-    --elevation-stroke: 0 0 0 2px hsl(10 calc(1 * 30%) 25% / 1);
-    --brand-experiment: rgba(130, 22, 22, 0.445);
-    --brand-15a: rgba(130, 22, 22, 0.9);
-    --brand-260: var(--background-primary);
-    --brand-360: rgba(130, 22, 22, 0.9);
-    --brand-400: rgba(130, 22, 22, 0.9);
-    --brand-500: rgba(130, 22, 22, 0.9);
-    --brand-530: rgba(130, 22, 22, 0.9);
-    --brand-560: rgba(130, 22, 22, 0.445);
-    --brand-600: rgba(130, 22, 22, 0.9);
-    --brand-experiment-15a: rgba(130, 22, 22, 0.9);
-    --red-400: rgba(130, 22, 22, 0.9);
-    --background-primary: hsl(10 calc(1 * 25%) 8% / 1);
-    --background-secondary: hsl(10 calc(1 * 25%) 8% / 1);
-    --background-secondary-alt: hsl(10 calc(1 * 25%) 8% / 1);
-    --background-tertiary: hsl(10 calc(1 * 25%) 8% / 1);
-    --background-floating: hsl(10 calc(1 * 25%) 8% / 1);
-    --bg-overlay-3: transparent;
-    --bg-surface-overlay: var(--background-secondary);
-    --autocomplete-bg: var(--background-primary);
-    --modal-background: hsl(10 calc(1 * 25%) 8% / 1);
-	--font-primary: Mooli;
-	--home-background: transparent;
-	--bg-overlay-chat: transparent;
-    --background-nested-floating: var(--background-primary);
+@font-face {
+    font-family: "font";
+    src: url('https://kot-pl.github.io/ComicMono.ttf');
 }
-body {
-    background-image: url(https://files.catbox.moe/mtrrag.png);
-    background-size: cover;
-    text-rendering: optimizeSpeed;
-    opacity: 0.85;
+* {
+    font-family: "font", var(--font-primary) !important;
 }
-/*base window*/
-[class^="base"]>[class^="content"]>[class^="chat"],
-[class^="standardSidebarView"]>[class^="contentRegion"],
-[class^="content"]>[class^="container"][aria-label],
-[class^="content"]>[class^="pageWrapper"],
-[class^="applicationStore"],
-[class^="base"]>[class^="content"]>[class^="shop"],
-[class^="content"]>[class^="outerContainer"]{
-	border-left: 2px solid rgba(130, 22, 22, 0.445);
-    border-top: 2px solid rgba(130, 22, 22, 0.445);
-    border-top-right-radius: 0;
-    border-top-left-radius: 8px;
-}
-/*horizontal server list*/
-[class^="container"]>[class^="base"]{
-    margin-top: 70px;
-}
-[class*="guilds"] {
-    background-color: hsl(10 calc(1 * 25%) 2% / 1)!important;
-    height: 100vw;
-    position: absolute;
-    margin-top: 70px;
-    transform: rotate(-90deg);
-    transform-origin: top left;
-}
-[class^="blobContainer"]>[class^="wrapper"],
-[class^="listItemWrapper"]>[class^="wrapper"],
-[class^="folderIconWrapper"]{
-    transform: rotate(90deg)
-}
-[class^="tooltip"][class*="listItemTooltip"]{
-    margin-top: 5px;
-}
-/*popoup fix*/
-[class^="recentMentionsPopout"],
-[class^="messagesPopoutWrap"]{
-	max-height: 80vh!important;
-}
-/*wide sidebar*/
-[class^="sidebar"],
-[class^="animatedContainer"]>[class^="bannerImage"],
-[class^="animatedContainer"]>[class^="bannerImage"]>[class^="bannerImg"]{
-	width: 320px!important;
-}
-[class^="privateChannels"]>[class^="scroller"]>[class^="content"]>[class^="channel"],
-[class^="privateChannels"]>[class^="scroller"]>[class^="content"]>[class^="friendsButtonContainer"]>[class^="channel"]{
-    max-width: 320px;
-}
-[class^="panels"]>[class^="container"]>[class^="flex"]{
-    margin-left: calc(20% + 10px);
-}
-[class^="panels"]{
-    margin: 8px 8px 22px 8px;
-    background: hsl(10 calc(1 * 25%) 2% / 1);
-}
-[class^="panels"]>[class^="container"]{
-    background: hsl(10 calc(1 * 25%) 2% / 1);
-    border: 2px dashed rgba(130, 22, 22, 0.445);
-    border-radius: 8px;
-}
-[class^="panels"]>[class^="wrapper"]>[class^="container"],
-[class^="panels"]>[class*="activityPanel"]{
-    background: hsl(10 calc(1 * 25%) 2% / 1);
-    border: 2px dashed rgba(130, 22, 22, 0.445);
-    border-radius: 8px;
-    margin-bottom: 8px;
-}
-[class^="channelTextArea"]{
-    border: 2px solid rgba(130, 22, 22, 0.445);
-}
-[class^="channelTextArea"]>[class^="attachedBars"],
-[class^="channelTextArea"]>[class^="stackedBars"]{
-    background: transparent;
-}
-/*sidebar background fix*/
-[class^="sidebar"]{
-    background: hsl(10 calc(1 * 25%) 2% / 1);
-}
-/*sidebar profle account*/
-[class^="accountProfilePopoutWrapper"]{
-    left: 0;
-}
-/* winbuttons*/
-[class^="winButton"]{
-    width: 30px;
-    height: 40px;
-    margin-right: 13px;
-    margin-top: 35px;
-}
-/* divider*/
-[class^="divider"]{
-    border-top: dashed 2px var(--background-modifier-accent);
-}
-[class^="divider"]>[class^="content"]{
-    color: var(--text-link);
-    background: var(--background-floating);
-}
-[class^="tooltipPointer"]{
-    display: none;
-}
-/*missing box shadow popup*/
-[class^="popoutContainer"],[class^="quickswitcher"]{
-    box-shadow: var(--elevation-medium);
-}
-/*submenu spacing*/
-[class^="submenuPaddingContainer"]{
-	padding-left: 10px;
-}
-/*unread balls*/
-[class^="containerDefault"]>[class^="iconVisibility"]>[class^="unread"]{
-    position: absolute;
-    height: 23px;
-    width: 23px;
-    border-radius: 50%;
-    top: 9px;
-    left: 7px;
-    background: linear-gradient(0deg,#c55252,#753939 36%,#6c2626fd 42%,#9c4040 70%);
-    z-index: 1;
-}
-/*scroll fix*/
-[class^="scrollableContainer"]::-webkit-scrollbar-thumb {
-    background: transparent;
-}
-[data-list-id="guildsnav"]>[class^="itemsContainer"]>[class^="footer"]{
-    background: hsl(10 calc(1 * 25%) 2% / 1);
+.visual-refresh body {
+    opacity: .8;
+    background: url(https://kot-pl.github.io/wallpaper1.jpeg)center/cover;
 }
 
-[aria-label="Open GIF picker"],
-[aria-label="Send a gift"],
-[aria-label="Open sticker picker"],
-[aria-label="Bookmarks"],
-[id="message-save-for-later-upsell"],
-[class^="channelAppLauncher"],
-[aria-label="Forward"],
-[id="message-forward"],
-[aria-label="Help"],
-[class^="hoverBarButton"]:has([class*="emoji"]),
-[class^="buttonsInner"]>[class^="separator"],
-[class^="menu"]>[class^="scroller"]>[class^="separator"],
-[class^="membersGroup_"]:has([class^="headerContainer_"]),
-[data-list-item-id^="members-"]>[class^="container_"]{
-    display: none;
+.visual-refresh .theme-dark,.visual-refresh.theme-dark {
+    --popout: #1b1b1b;
+    --popout1: #080808;
+    --border-subtle: transparent;
+    --border-faint: transparent;
+    --border-normal: transparent;
+    --app-border-frame: transparent;
+    --background-primary: var(--popout);
+    --background-base-low: var(--popout);
+    --bg-base-secondary: var(--popout);
+    --background-base-lower: var(--popout);
+    --bg-base-tertiary: var(--popout);
+    --background-base-lowest: var(--popout1);
+    --chat-background-default: var(--popout);
+    --background-surface-higher: var(--background-surface-high);
+}
+.visual-refresh div[class^="content_"]>div[class^="page_"] {
+    border-top-left-radius: 20px!important;
+}
+.visual-refresh [class^=channelTextArea_],
+[class^=channelTextArea_]:focus-within {
+    margin-bottom: 9px;
+    padding: 1px;
+    border: 0;
+    background: transparent;
+}
+.visual-refresh [class^=memberInner_]>[class^=avatar_] {
+    transform: scale(1.2);
+    padding: 5px;
+}
+.visual-refresh [class^=member_]>[class^=childContainer_] {
+    padding: 0;
+}
+.visual-refresh div[class^=sidebar_] nav[class^=wrapper_] {
+    margin-bottom: unset
+}
+.visual-refresh ul[class^=tree_] div[class^=listItem_] {
+    transform: scale(1.2);
+    padding-top: 4px;
+    padding-bottom: 4px
+}
+.visual-refresh ul[class^=stack_] {
+    height: unset!important
+}
+[id=guild-list-unread-dms] {
+    gap: 15px!important
+}
+.visual-refresh div[class^=circleIconButton_],
+.visual-refresh div[class^=folderPreview_] div[class^=icon_],
+.visual-refresh div[role=treeitem] div[class^=childWrapper_],
+.visual-refresh div[role=treeitem] img[class^=icon_] {
+    border-radius: 20px
+}
+.visual-refresh div[class^=listItem_] div[class^=pill_] {
+    margin-left: 6px
+}
+.visual-refresh [class^="panels_"]{
+    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) + 1px);
+    left: 65px;
+}
+.visual-refresh [class^="nowPlayingColumn_"]>[class^="container_"]{
+    background: none;
+}
+[id="emoji-picker-tab-panel"]>[class^="wrapper_"]{
+    background: transparent;
 }
