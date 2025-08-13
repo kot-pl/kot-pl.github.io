@@ -12,6 +12,7 @@
 }
 * {
     font-family: "font", var(--font-primary) !important;
+    font-weight: 100!important;
 }
 .visual-refresh body {
     opacity: .8;
