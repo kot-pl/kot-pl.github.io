@@ -6,20 +6,14 @@
 * @invite 0
 * @source kot-pl.github.io
 */
-@font-face {
-    font-family: "font";
-    src: url('https://kot-pl.github.io/ComicMono.ttf');
-}
-* {
-    font-family: "font", var(--font-primary) !important;
-    font-weight: 100!important;
-}
+@import url(https://fonts.googleapis.com/css2?family=Inter:opsz@14..32&display=swap);
 .visual-refresh body {
     opacity: .8;
     background: url(https://kot-pl.github.io/wallpaper1.jpeg)center/cover;
 }
 
 .visual-refresh .theme-dark,.visual-refresh.theme-dark {
+    --font-primary: "Inter";
     --popout: #1b1b1b;
     --popout1: #080808;
     --border-subtle: transparent;
