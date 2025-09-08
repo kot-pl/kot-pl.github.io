@@ -6,4 +6,90 @@
 * @invite 0
 * @source kot-pl.github.io/kot.css
 */
-.theme-dark{--wall1:url("https://i.imgur.com/dMzZOto.png");--coloradj:rgba(26, 15, 26, 0.7);--popupcolor:rgb(26, 15, 15);--color1:rgb(147, 112, 209);--background-base-lower:none!important;--background-surface-high:var(--popupcolor);--background-surface-higher:var(--popupcolor);--autocomplete-bg:var(--popupcolor);--chat-background-default:var(--popupcolor);--background-base-low:var(--popupcolor)!important;--background-base-lowest:var(--popupcolor)!important;--modal-background:var(--popupcolor);--modal-footer-background:none}.visual-refresh body{background:center/cover var(--wall1)!important}.visual-refresh #app-mount{background:var(--coloradj)!important}[class^=app_],[class^=autocompleteInner_]>[class^=rail_],[class^=bg_],[class^=channelChatWrapper_],[class^=chatContent_],[class^=chatContent_]+[class^=container_],[class^=chatLayerWrapper_]>[class^=container_],[class^=chat_],[class^=chat_]>[class^=wrapper_],[class^=contentRegionScroller_],[class^=contentRegion_],[class^=layer_],[class^=members_],[class^=nowPlayingColumn_]>[class^=container_],[class^=page_]>[class^=container_],[class^=panels_],[class^=privateChannels_],[class^=privateChannels_]>[class^=scroller_],[class^=searchResultsWrap_],[class^=sidebarList_],[class^=sidebarList_]>[class^=container_],[class^=sidebarRegionScroller_],[class^=sidebarRegion_],[class^=sidebar_]::after,[class^=sidebar_]>[class^=wrapper_],[class^=standardSidebarView_]{background:0 0!important}[class^=stack_]>[class^=listItem_]{scale:1.2;margin:3px 0}[class^=sidebar_]>[class^=wrapper_]{margin-bottom:0!important;transform-origin:top left;position:fixed;rotate:-90deg;height:100vw;margin-left:10px}[class^=blobContainer_]>[class^=wrapper_],[class^=folderPreview_],[class^=listItemWrapper_]{rotate:90deg}[class^=listItem_]>[class^=pill_]{margin-left:8px}[id=guild-list-unread-dms]{gap:15px!important}[class^=stack]{height:auto!important}[class^=base_]>[class^=content_]{margin-top:var(--custom-guild-list-width)}[class^=panels_]{width:calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - 10px)}[class^=panels_]>[class^=container_]>[class^=container_]{display:none}[data-list-item-id=guildsnav___home]::before{content:"";position:absolute;height:48px;width:48px;background:#643962;rotate:90deg}.visual-refresh [class^=typing_]{margin-left:auto;top:-25px}[class^=channelTextArea_]{margin-bottom:6px;padding:1px}
+*{
+    transition: none!important;
+}
+.theme-dark{  
+    --wall1: url("https://i.imgur.com/dMzZOto.png");
+    --coloradj: rgba(26, 15, 26, 0.7);
+} 
+.visual-refresh body{ 
+    background: center/cover var(--wall1)!important; 
+}
+.visual-refresh #app-mount{ 
+    background: var(--coloradj) !important; 
+}
+[class^="layer_"],
+[class^="app_"],
+[class^="bg_"],
+[class^="sidebarList_"],
+[class^="sidebarList_"]>[class^="container_"],
+[class^="sidebar_"]>[class^="wrapper_"],
+[class^="sidebar_"]::after,
+[class^="chat_"],
+[class^="chatContent_"],
+[class^="chat_"]>[class^="wrapper_"],
+[class^="channelChatWrapper_"],
+[class^="chatLayerWrapper_"]>[class^="container_"],
+[class^="searchResultsWrap_"],
+[class^="chatContent_"]+[class^="container_"],
+[class^="member"],
+[class^="standardSidebarView_"],
+[class^="sidebarRegion_"],
+[class^="sidebarRegionScroller_"],
+[class^="contentRegion_"],
+[class^="contentRegionScroller_"],
+[class^="page_"]>[class^="container_"],
+[class^="privateChannels_"],
+[class^="privateChannels_"]>[class^="scroller_"],
+[class^="nowPlayingColumn_"]>[class^="container_"],
+[class^="panels_"],
+[class^="autocompleteInner_"]>[class^="rail_"],
+[class*="themed_"],
+[class^="tabBody_"],
+[class^="nowPlayingColumn_"],
+[class^="chatTypingGradient"],
+[class^="children_"]::after{
+    background: none!important;
+}
+
+[class^="listItem_"]{
+    scale: 1.2;
+    margin: 3px 0;
+}
+[class^="sidebar_"]>[class^="wrapper_"]{
+    margin-bottom: 0!important;
+    transform-origin: top left;
+    position: fixed;
+    rotate: -90deg;
+    height: 100vw;
+    margin-left: 10px;
+}
+[class^="blobContainer_"]>[class^="wrapper_"],
+[class^="folderPreview_"]{
+    rotate: 90deg;
+}
+[class^="listItem_"]>[class^="pill_"]{
+    margin-left: 8px;
+}
+[class^="stack"]{
+    height: auto!important;
+}
+[class^="base_"]>[class^="content_"]{
+    margin-top: var(--custom-guild-list-width);
+}
+[class^="panels_"]{
+    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - 10px)
+}
+[class^="panels_"]>[class^="container_"]>[class^="container_"]{
+    display: none;
+}
+/* homeicon*/
+[data-list-item-id="guildsnav___home"]::before{
+    content: "";
+    position: absolute;
+    height: 48px;
+    width: 48px;
+    background: rgb(61, 39, 60);
+    rotate: 90deg;
+}
