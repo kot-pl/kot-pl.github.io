@@ -9,50 +9,19 @@
 *{
     transition: none!important;
 }
-.theme-dark{  
-    --wall1: url("https://i.imgur.com/dMzZOto.png");
-    --coloradj: rgba(26, 15, 26, 0.7);
-} 
-.visual-refresh body{ 
-    background: center/cover var(--wall1)!important; 
+.theme-dark {
+    --bg: url("https://i.imgur.com/dMzZOto.png");
+    --bgcolor: rgba(26, 15, 26, 0.7);
+    --background-base-low: none;
+    --background-base-lower: none;
+    --background-base-lowest: none;
 }
-.visual-refresh #app-mount{ 
-    background: var(--coloradj) !important; 
+body {
+    background: var(--bg)center/cover;
 }
-[class^="layer_"],
-[class^="app_"],
-[class^="bg_"],
-[class^="sidebarList_"],
-[class^="sidebarList_"]>[class^="container_"],
-[class^="sidebar_"]>[class^="wrapper_"],
-[class^="sidebar_"]::after,
-[class^="chat_"],
-[class^="chatContent_"],
-[class^="chat_"]>[class^="wrapper_"],
-[class^="channelChatWrapper_"],
-[class^="chatLayerWrapper_"]>[class^="container_"],
-[class^="searchResultsWrap_"],
-[class^="chatContent_"]+[class^="container_"],
-[class^="member"],
-[class^="standardSidebarView_"],
-[class^="sidebarRegion_"],
-[class^="sidebarRegionScroller_"],
-[class^="contentRegion_"],
-[class^="contentRegionScroller_"],
-[class^="page_"]>[class^="container_"],
-[class^="privateChannels_"],
-[class^="privateChannels_"]>[class^="scroller_"],
-[class^="nowPlayingColumn_"]>[class^="container_"],
-[class^="panels_"],
-[class^="autocompleteInner_"]>[class^="rail_"],
-[class*="themed_"],
-[class^="tabBody_"],
-[class^="nowPlayingColumn_"],
-[class^="chatTypingGradient"],
-[class^="children_"]::after{
-    background: none!important;
+#app-mount{
+    background-color: var(--bgcolor);
 }
-
 [class^="listItem_"]{
     scale: 1.2;
     margin: 3px 0;
@@ -62,11 +31,12 @@
     transform-origin: top left;
     position: fixed;
     rotate: -90deg;
-    height: 100vw;
+    height: 99vw;
     margin-left: 10px;
 }
 [class^="blobContainer_"]>[class^="wrapper_"],
-[class^="folderPreview_"]{
+[class^="folderPreview_"],
+[class^="listItemWrapper_"]{
     rotate: 90deg;
 }
 [class^="listItem_"]>[class^="pill_"]{
@@ -84,12 +54,10 @@
 [class^="panels_"]>[class^="container_"]>[class^="container_"]{
     display: none;
 }
-/* homeicon*/
-[data-list-item-id="guildsnav___home"]::before{
-    content: "";
-    position: absolute;
-    height: 48px;
-    width: 48px;
-    background: rgb(61, 39, 60);
-    rotate: 90deg;
+[class^="form_"]{
+    margin-top: -35px!important;
+}
+[class^="typing_"]{
+    left: auto!important;
+    margin-right: 20px;
 }
