@@ -65,6 +65,7 @@ body {
 .align-chat-input [class^="scroller_"]::-webkit-scrollbar-track{
     margin-bottom: 0;
 }
-[class^="chatTypingGradient"]{
+[class^="chatTypingGradient"],
+[class^="chatGradient_"]{
     height: 0;
 }
