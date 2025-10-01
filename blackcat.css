@@ -32,7 +32,6 @@ body{
 [class^="sidebarList_"]{
     border-top-left-radius: 0;
     width: 290px;
-    height: calc(100% + 30px);
 }
 [class^="sidebar_"]>[class^="wrapper_"]{
     margin-bottom: 0;
