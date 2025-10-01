@@ -92,10 +92,13 @@ body{
     background: #17171d;
 }
 [class^="upperContainer_"]>[class^="toolbar_"],
-[class^="headerBar_"]>[class^="searchBar_"],
 [class^="headerBarContent_"],
-[class^="alignedRightContent_"]{
+[class^="alignedRightContent_"],
+[class^="headerBar_"]>[class^="searchBar_"]{
     margin-right: 150px;
+}
+[class^="headerBar_"]{
+    gap: 0;
 }
 [class^="message_"]>[class^="contents_"]{
     background: #23232b;
@@ -114,7 +117,7 @@ body{
 [class^="folderHeader_"]{
     padding-bottom: 50px;
 }
-[class^="wrapper_"]>:nth-child(2),
+[class^="blobContainer_"]>[class^="wrapper_"]>[class^="svg_"]>foreignObject,
 [class^="folderPreview_"]>[class^="icon_"]{
     border-radius: 20px!important;
 }
