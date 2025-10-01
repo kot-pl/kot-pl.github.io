@@ -29,13 +29,9 @@ body{
     background-color: #110f15;
     --custom-app-top-bar-height: 10px;
 }
-[class^="sidebar_"]{
-    overflow: visible;
-}
 [class^="sidebarList_"]{
     border-top-left-radius: 0;
     width: 290px;
-    translate: 0 -8px;
     height: calc(100% + 30px);
 }
 [class^="sidebar_"]>[class^="wrapper_"]{
