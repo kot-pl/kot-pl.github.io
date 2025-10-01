@@ -91,10 +91,12 @@ body{
 [class^="sidebarRegion_"]{
     background: #17171d;
 }
-[class^="upperContainer_"]>[class^="toolbar_"]{
+[class^="upperContainer_"]>[class^="toolbar_"],
+[class^="headerBar_"]>[class^="searchBar_"],
+[class^="headerBarContent_"],
+[class^="alignedRightContent_"]{
     margin-right: 150px;
 }
-
 [class^="message_"]>[class^="contents_"]{
     background: #23232b;
     padding: 10px;
@@ -124,4 +126,7 @@ body{
     left: 0;
     margin-top: 0px;
 	background-color: #931c40;
+}
+[class^="listItem_"]>[class^="pill_"]{
+    margin-top: 3px;
 }
