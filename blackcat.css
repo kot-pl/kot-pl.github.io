@@ -1,0 +1,127 @@
+/**
+* @name kot black
+* @version 1
+* @description kot black
+* @author kot-pl
+* @invite 0
+* @source kot-pl.github.io/blackcat.css
+*/
+.theme-dark{
+    --background-base-low: none;
+    --background-base-lower: none;
+    --background-base-lowest: none;
+    --background-surface-high: #23232b;
+    --background-surface-higher: #23232b;
+    --background-surface-highest: #23232b;
+    --card-primary-bg: #23232b;
+    --chat-background-default: none;
+    --app-border-frame: hsla(0, 0%, 0%, 0);
+    --border-subtle: hsla(0, 0%, 0%, 0);
+    --border-faint: hsla(0, 0%, 0%, 0);
+    --autocomplete-bg: #110f15;
+    --background-modifier-selected: #931c40;
+    --text-brand: #931c40;
+    --status-danger: #931c40;
+    --scrollbar-auto-thumb: #931c40;
+    --scrollbar-thin-thumb: #931c40;
+}
+body{
+    background-color: #110f15;
+    --custom-app-top-bar-height: 10px;
+}
+[class^="sidebarList_"]{
+    border-top-left-radius: 20px;
+    width: 290px;
+}
+[class^="sidebar_"]>[class^="wrapper_"]{
+    margin-bottom: 0;
+}
+[class^="panels_"]{
+    margin-left: var(--custom-guild-list-width);
+    width: calc(100% - var(--space-xs)*2 - var(--custom-guild-list-width));
+}
+[class^="sidebarList_"]>[class^="container_"]{
+    padding-bottom: 70px;
+}
+[class^="trailing_"]>[class^="anchor_"],
+[class*=winButtonsWithDivider]::before,
+[class^="title_"]>[class^="title_"],
+[class^="panels_"]>[class^="container_"]>[class^="container_"]{
+    display: none;
+}
+[class^="trailing_"]{
+    position: absolute;
+    top: calc(100% + 8px);
+    right: 10px;
+    gap: var(--space-xs);
+    padding-right: var(--space-xs);
+    z-index: 101;
+}
+[class^="winButtons_"]>[class^="winButton_"]{
+    width: 30px;
+    height: 30px;
+}
+[class^="carouselModal_"]{
+    margin: 80px 24px;
+}
+[class^="form_"]{
+    padding: 0;
+}
+[class^="stackedBars_"]{
+    border-radius: 0!important;
+}
+[class^="childContainer_"]:has([fill="#43a25a"]){
+    border-radius: 20px;
+    background: linear-gradient(to right, rgba(31, 255, 1, 0.144), rgba(66, 66, 66, 0.15));
+}
+[class^="childContainer_"]:has([fill="#ca9654"]){
+    border-radius: 20px;
+    background: linear-gradient(to right, rgba(255, 251, 1, 0.144), rgba(66, 66, 66, 0.15));
+}
+[class^="childContainer_"]:has([fill="#d83a42"]){
+    border-radius: 20px;
+    background: linear-gradient(to right, rgba(255, 1, 1, 0.144), rgba(66, 66, 66, 0.15));
+}
+[class^="chatContent_"] + [class^="container_"],
+[class^="nowPlayingColumn_"]{
+    background: #17171d;
+    border-top-left-radius: 20px;
+}
+[class^="sidebarList_"],
+[class^="sidebarRegion_"]{
+    background: #17171d;
+}
+[class^="upperContainer_"]>[class^="toolbar_"]{
+    margin-right: 150px;
+}
+
+[class^="message_"]>[class^="contents_"]{
+    background: #23232b;
+    padding: 10px;
+    border-radius: 8px;
+    max-width: max-content;
+}
+[class^="stack_"]{
+    height: unset!important;
+}
+[class^="listItem_"]>:nth-child(2),
+[class^="tutorialContainer_"]{
+    scale: 1.2;
+    padding-top: 5px;
+}
+[class^="folderHeader_"]{
+    padding-bottom: 50px;
+}
+[class^="wrapper_"]>:nth-child(2),
+[class^="folderPreview_"]>[class^="icon_"]{
+    border-radius: 20px!important;
+}
+/*unreadbar*/
+[class^="iconVisibility_"]>[class^="unread_"]{
+    height: 30px;
+    width: 2px;
+    top: 2px;
+    left: 0;
+    margin-top: 0px;
+	background-color: #931c40;
+}
