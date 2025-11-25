@@ -6,22 +6,67 @@
 * @invite 0
 * @source kot-pl.github.io/kot.css
 */
-.theme-dark {
-    --background-base-lowest:#120c1357;
-    --background-base-lower: unset;
-    --background-base-low: unset;
-    --chat-background-default: unset;
+html.theme-dark:root,#app-mount .theme-dark {
+    --background-base-lowest: #19191a3d;
+    --background-base-lower: #40404400; 
+    --background-base-low: #212125;
+    --background-surface-higher: #212125;
+    --background-surface-high: #212125;
+    --autocomplete-bg: #212125;
+    --chat-background-default: #212125;
+    --modal-background: #212125;
+    --modal-footer-background: #212125;
+    --app-border-frame: transparent;
+    --border-subtle: #2c2c2e;
+    --shadow-high: unset;
 }
-.visual-refresh #app-mount {
-    background: url("https://i.imgur.com/OaYjmqB.jpeg")center/cover;
+#app-mount, body {
+    background: url("https://i.imgur.com/876pu0B.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-[class^="panels_"]{
-    width: calc(var(--custom-guild-sidebar-width) - var(--custom-guild-list-width) - 1px);
-    left: 72px;
-}
-[class^="panels_"]>[class^="container_"]>[class^="container_"]{
-    display: none;
+[class^="layers_"]>[class^="layer_"],
+[class^="standardSidebarView_"],
+[class^="sidebarRegionScroller_"],
+[class^="contentRegion_"],
+[class^="contentRegionScroller_"],
+[class^="privateChannels_"],
+[class^="nowPlayingColumn"]>[class^="container_"],
+[class^="sidebar_"]::after{
+    background: transparent;
 }
 [class^="sidebar_"]>[class^="wrapper_"]{
     margin-bottom: 0;
+    height: calc(100% + 20px);
+}
+ul[class^=tree_] div[class^=listItem_] {
+    transform: scale(1.2);
+    padding-top: 4px;
+    padding-bottom: 4px
+}
+ul[class^=stack_] {
+    height: unset!important
+}
+[id=guild-list-unread-dms] {
+    gap: 15px!important
+}
+div[class^=listItem_] div[class^=pill_] {
+    margin-left: 6px
+}
+[class^="blobContainer_"]>[class^="wrapper_"]>[class^="svg_"]>foreignObject,
+[class^="folderPreview_"]>[class^="icon_"]{
+    border-radius: 20px!important;
+}
+[class^="panels_"]{
+    margin-left: var(--custom-guild-list-width);
+    width: calc(100% - var(--space-xs)*2 - var(--custom-guild-list-width));
+}
+[class^="reactionTooltip_"],
+[id="emoji-picker-tab-panel"],
+[class^="tooltip_"]{
+    border: 1px solid #2c2c2e;
+}
+[style*="--profile-gradient-modal-background-color"]{
+    background: #212125!important;
 }
