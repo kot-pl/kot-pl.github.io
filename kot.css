@@ -70,3 +70,18 @@ div[class^=listItem_] div[class^=pill_] {
 [style*="--profile-gradient-modal-background-color"]{
     background: #212125!important;
 }
+[class^="childContainer_"]{
+    padding-left: 5px;
+}
+[class^="childContainer_"]:has([fill="#43a25a"]){
+    border-radius: 20px;
+    background: linear-gradient(to right, rgba(31, 255, 1, 0.144), rgba(66, 66, 66, 0.15));
+}
+[class^="childContainer_"]:has([fill="#ca9654"]){
+    border-radius: 20px;
+    background: linear-gradient(to right, rgba(255, 251, 1, 0.144), rgba(66, 66, 66, 0.15));
+}
+[class^="childContainer_"]:has([fill="#d83a42"]){
+    border-radius: 20px;
+    background: linear-gradient(to right, rgba(255, 1, 1, 0.144), rgba(66, 66, 66, 0.15));
+}
