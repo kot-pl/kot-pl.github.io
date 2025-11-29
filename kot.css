@@ -64,7 +64,8 @@ div[class^=listItem_] div[class^=pill_] {
 }
 [class^="reactionTooltip_"],
 [id="emoji-picker-tab-panel"],
-[class^="tooltip_"]{
+[class^="tooltip_"],
+[role=dialog]>[class^="browser_"]{
     border: 1px solid #2c2c2e;
 }
 [style*="--profile-gradient-modal-background-color"]{
