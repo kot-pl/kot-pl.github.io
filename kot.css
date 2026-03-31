@@ -6,83 +6,51 @@
 * @invite 0
 * @source kot-pl.github.io/kot.css
 */
-html.theme-dark:root,#app-mount .theme-dark {
-    --background-base-lowest: #19191a3d;
-    --background-base-lower: #40404400; 
-    --background-base-low: #212125;
-    --background-surface-higher: #212125;
-    --background-surface-high: #212125;
-    --autocomplete-bg: #212125;
-    --chat-background-default: #212125;
-    --modal-background: #212125;
-    --modal-footer-background: #212125;
-    --app-border-frame: transparent;
-    --border-subtle: #2c2c2e;
-    --shadow-high: unset;
+.theme-dark{
+    --background-base-lower: var(--background-base-lowest);
+    --background-base-low: var(--background-base-lowest);
 }
-#app-mount, body {
-    background: url("https://i.imgur.com/876pu0B.jpeg");
+body {
+    background: url("https://i.imgur.com/B0k8tpd.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 }
-[class^="layers_"]>[class^="layer_"],
-[class^="standardSidebarView_"],
-[class^="sidebarRegionScroller_"],
-[class^="contentRegion_"],
-[class^="contentRegionScroller_"],
-[class^="privateChannels_"],
-[class^="nowPlayingColumn"]>[class^="container_"],
-[class^="sidebar_"]::after{
-    background: transparent;
+#app-mount{
+    opacity: 0.85
 }
-[class^="sidebar_"]>[class^="wrapper_"]{
-    margin-bottom: 0;
-    height: calc(100% + 20px);
+[class^="sidebarList_"]{
+    border-start-start-radius: 0;
 }
-ul[class^=tree_] div[class^=listItem_] {
+[data-list-id="guildsnav"] {
     transform: scale(1.2);
+    height: calc(100% - 300px);
+    top: 8%;
     padding-top: 4px;
     padding-bottom: 4px
 }
-ul[class^=stack_] {
-    height: unset!important
+[class^="svg_"]>foreignObject,
+[class^="folderPreview_"]>[class^="icon_"]{
+    border-radius: 20px;
 }
-[id=guild-list-unread-dms] {
-    gap: 15px!important
-}
-div[class^=listItem_] div[class^=pill_] {
+[class^="listItem_"]>[class^=pill_] {
     margin-left: 6px
 }
-[class^="blobContainer_"]>[class^="wrapper_"]>[class^="svg_"]>foreignObject,
-[class^="folderPreview_"]>[class^="icon_"]{
-    border-radius: 20px!important;
+[class^="base_"]>[class^="content_"]{
+    margin-top:var(--custom-guild-list-width)!important;
 }
-[class^="panels_"]{
-    margin-left: var(--custom-guild-list-width);
-    width: calc(100% - var(--space-xs)*2 - var(--custom-guild-list-width));
+[class^="sidebar_"]>[class^="wrapper_"]{
+    bottom: unset;
+    height: calc(100vw - 25px);
+    left: 10px;
+    position: fixed;
+    rotate: -90deg;
+    transform-origin: top left;
 }
-[class^="reactionTooltip_"],
-[id="emoji-picker-tab-panel"],
-[class^="tooltip_"],
-[role=dialog]>[class^="browser_"]{
-    border: 1px solid #2c2c2e;
+[class^="listItem_"]>:nth-child(2){
+    rotate: 90deg;
 }
-[style*="--profile-gradient-modal-background-color"]{
-    background: #212125!important;
-}
-[class^="childContainer_"]{
-    padding-left: 5px;
-}
-[class^="childContainer_"]:has([fill="#43a25a"]){
-    border-radius: 20px;
-    background: linear-gradient(to right, rgba(31, 255, 1, 0.144), rgba(66, 66, 66, 0.15));
-}
-[class^="childContainer_"]:has([fill="#ca9654"]){
-    border-radius: 20px;
-    background: linear-gradient(to right, rgba(255, 251, 1, 0.144), rgba(66, 66, 66, 0.15));
-}
-[class^="childContainer_"]:has([fill="#d83a42"]){
-    border-radius: 20px;
-    background: linear-gradient(to right, rgba(255, 1, 1, 0.144), rgba(66, 66, 66, 0.15));
+::-webkit-scrollbar-thumb{
+    background: #505055!important;
+    border-radius: 0!important;
 }
